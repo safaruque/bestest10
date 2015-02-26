@@ -31,6 +31,7 @@ header p {
  ========================================================================== */
 @font-face {
   font-family: "Flaticon";
+  src: url();
   src: url("../fonts/flaticons/flaticon.eot");
   src: url("../fonts/flaticons/flaticon.eot") format("embedded-opentype"),
   url("../fonts/flaticons/flaticon.woff") format("woff"),
@@ -83,4 +84,10 @@ header p {
 }
 .icon-web-browser:before {
   content: "\e00b";
+}
+
+
+@font-face {
+    font-family: "Amaze";
+    src: url("../fonts/amaze-normal.ttf") format("truetype");
 }

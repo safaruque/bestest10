@@ -20,6 +20,8 @@
         <link rel="stylesheet" type="text/css" href="css/header/style.css" />
         <link rel="stylesheet" type="text/css" href="css/header/custom.css" />
 		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+		
+		 <script src="js/vendor/jquery-1.11.1.js"></script>
 		<noscript>
 			<link rel="stylesheet" type="text/css" href="css/header/styleNoJS.css" />
 		</noscript>
@@ -56,8 +58,6 @@
 		<link rel="stylesheet" href="css/responsive.css">
 
 
-		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
-		<script src="js/queryloader2.min.js"></script>
 		<!-- =========================
        	Preloader
     	============================== -->
@@ -123,7 +123,7 @@
        Header
     ============================== -->
     
-        <div class="container-fluid container-full demo-2">
+        <div class="container-fluid  demo-2">
 		
 			<!-- Codrops top bar -->
             <div class="codrops-top clearfix">
@@ -192,27 +192,7 @@
 
 			</div><!-- /slider-wrapper -->
 
-			
-    <!-- =========================
-       Call to action
-    ============================== -->
-    <section id="call-to-action" class="call-to-action main-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-12 wow slideInLeft animated">
-                    <p class="light-text">Like What You See? We're Just Getting Started</p>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 button-container wow slideInRight animated">
-                    <a href="#portfolio" class="button light internal-link pull-left hvr-grow" data-rel="#portfolio">View Portfolio</a>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </section> <!-- *** end call-to-action *** -->
-
-
-		
-		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+			<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
 		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
 		<script type="text/javascript">	
 			$(function() {
@@ -280,25 +260,37 @@
 
 				Page.init();
 
-
-				/**
-				 * Notes: 
-				 * 
-				 * example how to add items:
-				 */
-
-				/*
-				
-				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
-				
-				// call the plugin's add method
-				ss.add($items);
-
-				*/
 			
 			});
 		</script>
 
+    <!-- =========================
+       Call to action
+    ============================== -->
+    <section id="call-to-action" class="call-to-action main-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-12 wow slideInLeft animated">
+                    <p class="light-text" style="font-family:Amaze; font-weight: 700; font-size: 30px; 	letter-spacing: 0.5em;">  Shakib Al Hasan</p>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12 button-container wow slideInRight animated">
+                    <a href="#portfolio" class="button like internal-link pull-left hvr-grow" data-rel="#portfolio"> 
+
+                    	<i class="fa fa-thumbs-o-up fa-3x fw"></i> 50k likes</a>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12 button-container wow slideInRight animated">
+                    <a href="#portfolio" class="button like internal-link pull-left hvr-grow" data-rel="#portfolio"> 
+
+                    	<i class="fa fa-check-square-o fa-3x fw"></i></i> 50k followers</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section> <!-- *** end call-to-action *** -->
+
+
+		
+		
     <!-- =========================
        About Us
     ============================== -->
@@ -1310,8 +1302,9 @@
 	     JavaScripts
 	    ============================== -->
 	    
-		 <script src="js/vendor/jquery-1.11.1.js"></script>
-	    <script src="js/vendor/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script src="js/queryloader2.min.js"></script>
+	   
 	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&amp;sensor=false"></script>
 	    <script src="js/twitterFetcher_min.js"></script>
 	    <script src="js/vendor/bootstrap.js"></script>

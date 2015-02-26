@@ -151,7 +151,7 @@ h6 {
    1.2 Helper classes
    ========================================================================== */
 .main-bg {
-  background:  #3399CC;
+  background:  #468966;
 }
 .main-color {
   color:  #3399CC;
@@ -182,6 +182,15 @@ h6 {
 }
 .button.light {
   border: 2px solid #eeeeee;
+}
+.button.like{
+  border: 2px solid #8E2800;
+  padding: 10px 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 100;
+  color:#8E2800;
+
 }
 .padding-large {
   padding-top: 90px;
@@ -580,8 +589,8 @@ header .logo-container {
   2.2 Component: Call To ACTION
  ========================================================================== */
 .call-to-action {
-  padding: 15px;
-  color: #eeeeee;
+  padding: 10px;
+  color: #8E2800;
   font-size: 18px;
   position: relative;
 }
