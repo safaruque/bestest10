@@ -27,7 +27,8 @@
 			<link rel="stylesheet" type="text/css" href="css/header/styleNoJS.css" />
 		</noscript>
 
-
+		<link rel="stylesheet" type="text/css" href="css/pfold.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom2.css" />
 	    <!-- =========================
 	       Bootstrap and animation
 	    ============================== -->
@@ -83,6 +84,46 @@
 	    <!-- =========================
 	       Fullscreen menu
 	    ============================== -->
+	    <header id="navigation" class="navbar-fixed-top">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- /responsive nav button -->
+
+                    <!-- logo -->
+                    <h1 class="navbar-brand">
+                       	<span class="circular"> </span>
+                         <span class="header-title"> Shakib Al Hasan</span>
+                    </h1>
+                    <!-- /logo -->
+
+                    </div>
+
+                    <!-- main nav -->
+                    <!--<nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
+                        <ul id="nav" class="nav navbar-nav">
+                            <li class="current"><a href="#home">Home</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="#portfolio">portfolio</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- /main nav -->
+                </div>
+
+            </div>
+        </header>
+
+
 	    <div class="mobilenav">
 	        <ul>
 	            <li data-rel="#header">
@@ -142,6 +183,7 @@
 							<h2>A bene placito.</h2>
 							<blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
 						</div>
+						<div class="overlay"></div>
 					</div>
 					
 					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
@@ -150,6 +192,7 @@
 							<h2>Regula aurea.</h2>
 							<blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
 						</div>
+						<div class="overlay"></div>
 					</div>
 					
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
@@ -158,6 +201,7 @@
 							<h2>Dum spiro, spero.</h2>
 							<blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>
 						</div>
+						<div class="overlay"></div>
 					</div>
 					
 					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
@@ -166,6 +210,7 @@
 							<h2>Donna nobis pacem.</h2>
 							<blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>
 						</div>
+						<div class="overlay"></div>
 					</div>
 					
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
@@ -174,6 +219,7 @@
 							<h2>Acta Non Verba.</h2>
 							<blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>
 						</div>
+						<div class="overlay"></div>
 					</div>
 				</div><!-- /sl-slider -->
 				
@@ -193,13 +239,13 @@
 			</div><!-- /slider-wrapper -->
 
 			<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
-		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
-		<script type="text/javascript">	
-			$(function() {
+			<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+			<script type="text/javascript">	
+				$(function() {
 			
-				var Page = (function() {
+					var Page = (function() {
 
-					var $navArrows = $( '#nav-arrows' ),
+						var $navArrows = $( '#nav-arrows' ),
 						$nav = $( '#nav-dots > span' ),
 						slitslider = $( '#slider' ).slitslider( {
 							onBeforeChange : function( slide, pos ) {
@@ -247,7 +293,6 @@
 									
 									slitslider.jump( i + 1 );
 									return false;
-								
 								} );
 								
 							} );
@@ -256,13 +301,13 @@
 
 						return { init : init };
 
-				})();
+					})();
 
 				Page.init();
 
 			
-			});
-		</script>
+				});
+			</script>
 
     <!-- =========================
        Call to action
@@ -291,90 +336,263 @@
     <!-- ============================= 
     	Profile
     	==============================-->
-		
-		 <section id="service">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title text-center wow fadeInDown">
-                            <h2>Profile</h2>    
-                            <p> <span style="color:#E74C3C"> Full name : </span> Shakib Al Hasan <br>
+		<!-- Three -->
 
-								<span style="color:#E74C3C"> Born :  </span>March 24, 1987, Magura, Jessore <br>
+			
 
-								<span style="color:#E74C3C"> Major team: </span> Bangladesh <br>
 
-								<span style="color:#E74C3C"> Playing role: </span>  Allrounder <br>
-
-								<span style="color:#E74C3C"> Batting style : </span>Left-hand bat <br>
-
-								<span style="color:#E74C3C"> Bowling style : </span> Slow left-arm orthodox</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-
-                    <div class="col-md-6 col-sm-12 wow fadeInLeft">
-                        <div class="media">
-                            <a href="#" class="pull-left">
-                                <img src="img/icons/monitor.png" class="media-object" alt="Monitor">
-                            </a>
-                            <div class="media-body">
-                                <h3>Bio</h3>
-                                <p>
-                                	Popularly known as Faisal in his family, Shakib Al Hasan was a very intelligent and clever boy. His father was a very good football player and wanted his son to be one as well. But Shakib had other interests. Even at a very young age, Shakib used to earn a fair amount of money as he used to be hired to play for different villages. In one of these matches Shakib impressed an umpire who arranged for him to practice with the Islampur Para Club, a team in the Magura Cricket League. During the practice session, Shakib batted aggressively and bowled fast, as he usually did, but also chose to experiment with spin bowling and proved effective.
-
+			<section id="three" class="spotlight style3 left" >
+				<div class="container-fluid ">
+					<div class="row">
+						<div class="content col-md-2 col-sm-4 col-xs-12  wow fadeInRight" data-wow-delay="0.2s">
+							<div >
+								<div >
+									<table class="profile_des">
+									  <tr>
+									    <th> <h2> Profile </h2> </th>
+									    <th></th>
+									  </tr>
+									  <tr >
+									    <td >Full name : </td>
+									    <td>Shakib Al Hasan</td>
+									  </tr>
+									  <tr >
+									    <td>Born : </td>
+									    <td>March 24, 1987, Magura, Jessore</td>
+									  </tr>
+									  <tr >
+									    <td>Major Team : </td>
+									    <td>  Bangladesh </td>
+									  </tr>
+									  <tr >
+									    <td> Playing Role : </td>
+									    <td>  Allrounder </td>
+									  </tr>
+									  <tr >
+									    <td>Batting style : </td>
+									    <td> Left-hand bat</td>
+									  </tr>
+									  <tr >
+									    <td>Bowling style : </td>
+									    <td> Slow left-arm orthodox</td>
+									  </tr>
+								</table>
 									
-</p>
-                            </div>
-                        </div>
+								</div>
+								
+								<ul class="actions">
+									<li><a href="#" class="button">Learn More</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-8 col-sm-4 col-xs-12"> <h2 class=""> </h2>
 
-                    </div>
+							<div class="container-fluid">
+				                
+				                <div class="row">
 
-                    <div class="col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0.2s">
-                        <div class="media">
-                            <a href="#" class="pull-left">
-                                <img src="img/icons/cog.png" alt="Cog">
-                            </a>
-                            <div class="media-body">
-                                <h3>  Picked Up a Wicket in his very first Ball !</h3>
-                                <p> He was picked to play for Islampur and took a wicket with his first ball; it was his first delivery with a proper cricket ball, having previously generally played with a taped tennis ball. He spent six months training at Bangladesh Krira Shiksha Pratisthan, a government-run sports institute. 
+				                    <div class="col-md-6 col-sm-12 ">
 
-                                He was picked to play for Islampur and took a wicket with his first ball; it was his first delivery with a proper cricket ball, having previously generally played with a taped tennis ball. He spent six months training at Bangladesh Krira Shiksha Pratisthan, a government-run sports institute.</p>
-                            </div>
-                        </div>
-                        
-                    </div>
+										<section class="pfold-main demo-2">
+											
+											<div id="grid" class="grid clearfix">
+											
+												<div class="uc-container wow fadeInLeft">
+													<div class="uc-initial-content" style= "background: #fff url(images/thumbs/bio.png) no-repeat center center" ;>
+														<p class= "profile-title"> Bio </p>
+														
+														<span class="icon-eye">  </span>
+													</div>
+													<div class="uc-final-content" style= "background: #fff url(images/thumbs/bio.png) no-repeat center center" >
+														<div class="profile_content"> Popularly known as Faisal in his family, Shakib Al Hasan was a very intelligent and clever boy. His father was a very good football player and wanted his son to be one as well. But Shakib had other interests. Even at a very young age, Shakib used to earn a fair amount of money as he used to be hired to play for different villages. In one of these matches Shakib impressed an umpire who arranged for him to practice with the Islampur Para Club, a team in the Magura Cricket League. During the practice session, Shakib batted aggressively and bowled fast, as he usually did, but also chose to experiment with spin bowling and proved effective.
+</div>
+														<div class="title"></div>
+														<span class="icon-cancel"></span>
+													</div>
+												</div><!-- / uc-container -->
 
-                    <div class="col-md-6 col-sm-12 wow fadeInLeft">
-                        <div class="media">
-                            <a href="#" class="pull-left">
-                                <img src="img/icons/ruler.png" alt="Ruler">
-                            </a>
-                            <div class="media-body">
-                                <h3>  Early International Career</h3>
-                                <p>In 2005, during the final of a tri-nation tournament involving England and Sri Lanka's Under-19 teams, Shakib scored an 86-ball century and took three wickets to help his team to victory. Between 2005 and 2006, Shakib played 18 youth One Day Internationals; he scored 563 runs at an average of 35.18, and took 22 wickets at an average of 20.18.
+												<div class="uc-container wow fadeInRight">
+													<div class="uc-initial-content" style= "background: #fff url(images/thumbs/2.png) no-repeat center center" >
+														<p class= "profile-title"> Bio </p>
+														
+														<span class="icon-eye">  </span>
+													</div>
+													<div class="uc-final-content"  style= "background: #fff url(images/thumbs/2.png) no-repeat center center">
+														<div class="profile_content"> Popularly known as Faisal in his family, Shakib Al Hasan was a very intelligent and clever boy. His father was a very good football player and wanted his son to be one as well. But Shakib had other interests. Even at a very young age, Shakib used to earn a fair amount of money as he used to be hired to play for different villages. In one of these matches Shakib impressed an umpire who arranged for him to practice with the Islampur Para Club, a team in the Magura Cricket League. During the practice session, Shakib batted aggressively and bowled fast, as he usually did, but also chose to experiment with spin bowling and proved effective.
+</div>
+														<div class="title"></div>
+														<span class="icon-cancel"></span>
+													</div>
+												</div><!-- / uc-container -->
 
-								He made his international debut against Zimbabwe in 2006 and impressed one and all. Shakib Al Hasan soon became a regular member of the team and became a man to rely on. He performed consistently both with the bat and ball for Bangladesh team.</p>
-                            </div>
-                        </div>
-                    </div>
+												<div class="uc-container wow fadeInLeft" >
+													<div class="uc-initial-content"  style= "background: #fff url(images/thumbs/ball.png) no-repeat center center">
+														<p class= "profile-title"> Bio </p>
+														
+														<span class="icon-eye">  </span>
+													</div>
+													<div class="uc-final-content"  style= "background: #fff url(images/thumbs/ball.png) no-repeat center center">
+														<div class="profile_content"> Popularly known as Faisal in his family, Shakib Al Hasan was a very intelligent and clever boy. His father was a very good football player and wanted his son to be one as well. But Shakib had other interests. Even at a very young age, Shakib used to earn a fair amount of money as he used to be hired to play for different villages. In one of these matches Shakib impressed an umpire who arranged for him to practice with the Islampur Para Club, a team in the Magura Cricket League. During the practice session, Shakib batted aggressively and bowled fast, as he usually did, but also chose to experiment with spin bowling and proved effective.
+</div>
+														<div class="title"></div>
+														<span class="icon-cancel"></span>
+													</div>
+												</div><!-- / uc-container -->
 
-                    <div class="col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0.2s">
-                        <div class="media">
-                            <a href="#" class="pull-left">
-                                <img src="img/icons/camera.png" alt="Camera">
-                            </a>
-                            <div class="media-body">
-                                <h3>Personal Life</h3>
-                                <p> When Shakib went to England to play county cricket for Worcestershire in 2010 he met with American Bangladeshi girl, Umme Ahmed Shisir. Then they fall in love with one another and finally got married in 12.12.12 to keep this date memorable in human history. Shisir’s father, Mamotaj Ahmed was a government officer in Narayanganj but his home town is Raypura, Narsingdi, Bangladesh. In 1993 shisir family immigrated to United States when she was a student of only class three and 10 years old. Now she studying software engineering at the University of Minnesota in the United States. Their marriage ceremony held in Hotel Ruposhi Bangla but only Tamim Iqbal was present from Bangladesh Cricket Team.</p>
-                            </div>
-                        </div>
-                    </div>
+												<div class="uc-container  wow fadeInRight">
+													<div class="uc-initial-content"  style= "background: #fff url(images/thumbs/bat.png) no-repeat center center">
+														<p class= "profile-title"> Bio </p>
+														
+														<span class="icon-eye">  </span>
+													</div>
+													<div class="uc-final-content"  style= "background: #fff url(images/thumbs/bat.png) no-repeat center center">
+														<div class="profile_content"> Popularly known as Faisal in his family, Shakib Al Hasan was a very intelligent and clever boy. His father was a very good football player and wanted his son to be one as well. But Shakib had other interests. Even at a very young age, Shakib used to earn a fair amount of money as he used to be hired to play for different villages. In one of these matches Shakib impressed an umpire who arranged for him to practice with the Islampur Para Club, a team in the Magura Cricket League. During the practice session, Shakib batted aggressively and bowled fast, as he usually did, but also chose to experiment with spin bowling and proved effective.
+</div>
+														<div class="title"></div>
+														<span class="icon-cancel"></span>
+													</div>
+												</div><!-- / uc-container -->
+												<div class="uc-container wow fadeInLeft">
+													<div class="uc-initial-content" style= "background: #fff url(images/thumbs/stamp.png) no-repeat center center" ;>
+														<p class= "profile-title"> Bio </p>
+														
+														<span class="icon-eye">  </span>
+													</div>
+													<div class="uc-final-content" style= "background: #fff url(images/thumbs/stamp.png) no-repeat center center" >
+														<div class="profile_content"> Popularly known as Faisal in his family, Shakib Al Hasan was a very intelligent and clever boy. His father was a very good football player and wanted his son to be one as well. But Shakib had other interests. Even at a very young age, Shakib used to earn a fair amount of money as he used to be hired to play for different villages. In one of these matches Shakib impressed an umpire who arranged for him to practice with the Islampur Para Club, a team in the Magura Cricket League. During the practice session, Shakib batted aggressively and bowled fast, as he usually did, but also chose to experiment with spin bowling and proved effective.
+</div>
+														<div class="title"></div>
+														<span class="icon-cancel"></span>
+													</div>
+												</div><!-- / uc-container -->
+												<div class="uc-container wow fadeInLeft">
+													<div class="uc-initial-content" style= "background: #fff url(images/thumbs/helmet.jpg) no-repeat center center" ;>
+														<p class= "profile-title"> Bio </p>
+														
+														<span class="icon-eye">  </span>
+													</div>
+													<div class="uc-final-content" style= "background: #fff url(images/thumbs/helmet.jpg) no-repeat center center" >
+														<div class="profile_content"> Popularly known as Faisal in his family, Shakib Al Hasan was a very intelligent and clever boy. His father was a very good football player and wanted his son to be one as well. But Shakib had other interests. Even at a very young age, Shakib used to earn a fair amount of money as he used to be hired to play for different villages. In one of these matches Shakib impressed an umpire who arranged for him to practice with the Islampur Para Club, a team in the Magura Cricket League. During the practice session, Shakib batted aggressively and bowled fast, as he usually did, but also chose to experiment with spin bowling and proved effective.
+</div>
+														<div class="title"></div>
+														<span class="icon-cancel"></span>
+													</div>
+												</div><!-- / uc-container -->
 
-                </div> <!-- end .row -->
-            </div> <!-- end .container -->
-        </section>
+
+											</div><!-- / grid -->
+											
+										</section>
+										<script type="text/javascript" src="js/jquery.pfold.js"></script>
+										<script type="text/javascript">
+											$(function() {
+
+												// say we want to have only one item opened at one moment
+												var opened = false;
+
+												$( '#grid > div.uc-container' ).each( function( i ) {
+
+													var $item = $( this ), direction;
+
+													switch( i ) {
+														case 0 : direction = ['right','bottom']; break;
+														case 1 : direction = ['left','bottom']; break;
+														case 2 : direction = ['right','top']; break;
+														case 3 : direction = ['left','top']; break;
+													}
+													
+													var pfold = $item.pfold( {
+														folddirection : direction,
+														speed : 300,
+														onEndFolding : function() { opened = false; },
+													} );
+
+													$item.find( 'span.icon-eye' ).on( 'click', function() {
+
+														if( !opened ) {
+															opened = true;
+															pfold.unfold();
+														}
+
+
+													} ).end().find( 'span.icon-cancel' ).on( 'click', function() {
+
+														pfold.fold();
+
+													} );
+
+												} );
+												
+											});
+										</script>
+				                       <!-- <div class="media">
+				                            <a href="#" class="pull-left">
+				                                <img src="img/icons/monitor.png" class="media-object" alt="Monitor">
+				                            </a>
+				                            <div class="media-body">
+				                                <h3>Bio</h3>
+				                                <p>
+				                                	Popularly known as Faisal in his family, Shakib Al Hasan was a very intelligent and clever boy. His father was a very good football player and wanted his son to be one as well. But Shakib had other interests. Even at a very young age, Shakib used to earn a fair amount of money as he used to be hired to play for different villages. In one of these matches Shakib impressed an umpire who arranged for him to practice with the Islampur Para Club, a team in the Magura Cricket League. During the practice session, Shakib batted aggressively and bowled fast, as he usually did, but also chose to experiment with spin bowling and proved effective.
+
+													
+				</p>
+				                            </div>
+				                        </div>
+
+				                    </div>
+
+				                    <div class="col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0.2s">
+				                        <div class="media">
+				                            <a href="#" class="pull-left">
+				                                <img src="img/icons/cog.png" alt="Cog">
+				                            </a>
+				                            <div class="media-body">
+				                                <h3>  Picked Up a Wicket in his very first Ball !</h3>
+				                                <p> He was picked to play for Islampur and took a wicket with his first ball; it was his first delivery with a proper cricket ball, having previously generally played with a taped tennis ball. He spent six months training at Bangladesh Krira Shiksha Pratisthan, a government-run sports institute. 
+
+				                                He was picked to play for Islampur and took a wicket with his first ball; it was his first delivery with a proper cricket ball, having previously generally played with a taped tennis ball. He spent six months training at Bangladesh Krira Shiksha Pratisthan, a government-run sports institute.</p>
+				                            </div>
+				                        </div>
+				                        
+				                    </div>
+
+				                    <div class="col-md-6 col-sm-12 wow fadeInLeft">
+				                        <div class="media">
+				                            <a href="#" class="pull-left">
+				                                <img src="img/icons/ruler.png" alt="Ruler">
+				                            </a>
+				                            <div class="media-body">
+				                                <h3>  Early International Career</h3>
+				                                <p>In 2005, during the final of a tri-nation tournament involving England and Sri Lanka's Under-19 teams, Shakib scored an 86-ball century and took three wickets to help his team to victory. Between 2005 and 2006, Shakib played 18 youth One Day Internationals; he scored 563 runs at an average of 35.18, and took 22 wickets at an average of 20.18.
+
+												He made his international debut against Zimbabwe in 2006 and impressed one and all. Shakib Al Hasan soon became a regular member of the team and became a man to rely on. He performed consistently both with the bat and ball for Bangladesh team.</p>
+				                            </div>
+				                        </div>
+				                    </div>
+
+				                    <div class="col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0.2s">
+				                        <div class="media">
+				                            <a href="#" class="pull-left">
+				                                <img src="img/icons/camera.png" alt="Camera">
+				                            </a>
+				                            <div class="media-body">
+				                                <h3>Personal Life</h3>
+				                                <p> When Shakib went to England to play county cricket for Worcestershire in 2010 he met with American Bangladeshi girl, Umme Ahmed Shisir. Then they fall in love with one another and finally got married in 12.12.12 to keep this date memorable in human history. Shisir’s father, Mamotaj Ahmed was a government officer in Narayanganj but his home town is Raypura, Narsingdi, Bangladesh. In 1993 shisir family immigrated to United States when she was a student of only class three and 10 years old. Now she studying software engineering at the University of Minnesota in the United States. Their marriage ceremony held in Hotel Ruposhi Bangla but only Tamim Iqbal was present from Bangladesh Cricket Team.</p>
+				                            </div>
+				                        </div>
+				                    </div>
+
+				                </div> <!-- end .row -->
+				           <!--</div> --><!-- end .container -->
+
+
+
+						</div>
+					</div>
+				</div>
+			</section><!--<section id="service">
+           
+        </section>-->
         <!--
         End # Profile
         ========================== -->
