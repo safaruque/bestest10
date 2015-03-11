@@ -185,13 +185,14 @@ h6 {
   border: 2px solid #eeeeee;
 }
 .button.like{
-  border: 2px solid #fff;
-  padding: 10px 10px;
-  margin-top: 10px;
-  font-size: 14px;
-  font-weight: 100;
-  color:#fff;
-
+  padding: 12px 0px;
+  margin-left: 50px;
+}
+.button.share{
+  padding-top: 10px;
+  padding-left: 5px;
+  color: #2C3E50;
+  font-size: 13px;
 }
 .padding-large {
   padding-top: 90px;
@@ -693,11 +694,22 @@ header .logo-container {
   color: #fff;
   font-size: 18px;
   position: relative;
+  background: linear-gradient(to left, #fff 50%, #2C3E50 50%);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
 }
 .call-to-action p {
   margin: 20px;
 }
+.call-to-action div.left_calltoaction{
+  background: #2C3E50;
+  color: #ECF0F1;
+}
 
+.call-to-action span.like_text{
+  color: #2C3E50;
+  font-size: 12px;
+}
 
 /*============================================================
     Profile
