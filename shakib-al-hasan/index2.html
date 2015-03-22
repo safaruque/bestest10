@@ -19,8 +19,14 @@
 		<link rel="stylesheet" type="text/css" href="css/header/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/header/style.css" />
         <link rel="stylesheet" type="text/css" href="css/header/custom.css" />
+        <link rel="stylesheet" type="text/css" href="css/buttons.css">
+        <link rel="stylesheet" type="text/css" href="css/component.css">
+        <link rel="stylesheet" type="text/css" href="css/tabs.css" />
+		<link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
+         <link rel="stylesheet" type="text/css" href="css/graph.css" />
         <script type="text/javascript" src="js/vendor/jquery-1.11.1.js"></script>
 		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+
 		
 		 <script src="js/vendor/jquery-1.11.1.js"></script>
 		<noscript>
@@ -55,7 +61,6 @@
 	    <!-- ***** Custom Stylesheet ***** -->
 	    <link rel="stylesheet" href="css/main.css">
 	   
-		
 		<!-- ***** Responsive fixes ***** -->
 		<link rel="stylesheet" href="css/responsive.css">
 
@@ -76,7 +81,6 @@
 	        });
 	    </script>
 
-	
     </head>
 
     <body>
@@ -138,26 +142,13 @@
             </a>
         </header>
 
-
     <!-- =========================
        Header
     ============================== -->
     
         <div class="container-fluid  demo-2">
-		
-			<!-- Codrops top bar -->
-            <!--<div class="codrops-top clearfix">-->
-               <!---->
-                <!--<div class="clr"></div>-->
-            <!--</div>-->
-            <!---->
-            <!--/ Codrops top bar -->
-
-            
            <div id="slider" class="sl-slider-wrapper">
-
 				<div class="sl-slider">
-				
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 						<div class="sl-slide-inner">
 							<div class="bg-img bg-img-1"></div>
@@ -225,7 +216,6 @@
 				$(function() {
 			
 					var Page = (function() {
-
 						var $navArrows = $( '#nav-arrows' ),
 						$nav = $( '#nav-dots > span' ),
 						slitslider = $( '#slider' ).slitslider( {
@@ -233,106 +223,82 @@
 
 								$nav.removeClass( 'nav-dot-current' );
 								$nav.eq( pos ).addClass( 'nav-dot-current' );
-
 							}
 						} ),
 
 						init = function() {
 
 							initEvents();
-							
 						},
 						initEvents = function() {
-
 							// add navigation events
 							$navArrows.children( ':last' ).on( 'click', function() {
-
 								slitslider.next();
 								return false;
-
 							} );
 
 							$navArrows.children( ':first' ).on( 'click', function() {
-								
 								slitslider.previous();
 								return false;
-
 							} );
 
 							$nav.each( function( i ) {
-							
 								$( this ).on( 'click', function( event ) {
-									
 									var $dot = $( this );
 									
 									if( !slitslider.isActive() ) {
 
 										$nav.removeClass( 'nav-dot-current' );
 										$dot.addClass( 'nav-dot-current' );
-									
 									}
-									
 									slitslider.jump( i + 1 );
 									return false;
 								} );
-								
 							} );
-
 						};
-
 						return { init : init };
-
 					})();
-
 				Page.init();
-
-			
 				});
 			</script>
         </div>
+
     <!-- =========================
        Call to action
     ============================== -->
-    <section id="call-to-action" class="call-to-action main-bg">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-12 wow slideInLeft animated ">
-                    <p class="light-text" style="letter-spacing:.1" > #1 All rounder in all three formats of cricket</p>
+    	<div class="container-fluid call-to-action">
+    	   	<div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 left_calltoaction " >
+                    <p class="light-text wow fadeInDown animated" data-wow-delay="0.2s " style= "visibility: visible; -webkit-animation-delay: 0.2s;"> &#8917 1 All rounder in all three formats of cricket</p>
                 </div>
-                <div class="col-md-5 col-sm-6 col-xs-12 button-container wow slideInRight animated">
-                    <a href="#portfolio" class="button like internal-link pull-left hvr-grow" data-rel="#portfolio"> 
-                    	 <i> <img src="images/like_button.png" width=120px height=35px;> </i>
-                    </a>
-                     <a href="#portfolio" class="button share internal-link pull-left hvr-grow" data-rel="#portfolio"> 
-                    	 <i> <img src="images/share.png" width=120px height=40px;> </i> 14,23,454,656 people like this.
-                    </a>
-                    
+                <div class="col-md-6 col-sm-6 col-xs-12 right_calltoaction"  >
+                    <div class="like-calltoaction wow fadeInDown animated" data-wow-delay="0.3s" style= "visibility: visible; -webkit-animation-delay: 0.3s;" > 
+                    		<a href="#portfolio" class="button like internal-link pull-left hvr-grow" data-rel="#portfolio"> 
+                    	 		<i> <img src="images/like_button.jpg" > </i>
+                    		</a>
+                    		 <a href="#portfolio" class="button share internal-link pull-left hvr-grow" style="padding-top:12px; " data-rel="#portfolio"> 
+                    	 		<i > <img src="images/share.jpg" > </i> 
+                   			</a> 
+                   			<p> 14,23,454,656 people like this.</p>
+                	</div>
+                    <div class="text-calltoaction"> </div>
                 </div>
-                
-                <div class="clearfix"></div>
             </div>
-        </div>
-    </section> <!-- *** end call-to-action *** -->
+   		</div> 
+   		<!-- *** end call-to-action *** -->
 
     <!-- ============================= 
     	Profile
     	==============================-->
-		<!-- Three -->
-
-			
-
-
-			<section id="three" class="spotlight style3 left" >
-				<div class="container-fluid ">
-					<div class="row">
-						<div class="content col-md-2 col-sm-4 col-xs-12  wow fadeInRight" data-wow-delay="0.2s">
-							<div >
-								<div >
-									<table class="profile_des">
-									  <tr>
-									    <th> <h2> Profile </h2> </th>
-									    <th></th>
-									  </tr>
+		<div class="md-modal md-effect-11" id="modal-1">
+			<div class="md-content">
+				<h3>Profile</h3>
+				<div>
+					
+					<ul>
+						<li>
+							<table class="profile_des">
+									 
 									  <tr >
 									    <td >Full name : </td>
 									    <td>Shakib Al Hasan</td>
@@ -358,183 +324,349 @@
 									    <td> Slow left-arm orthodox</td>
 									  </tr>
 								</table>
-								</div>
+							<li>
+					</ul>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>	
+		</div>
+		<div class="md-modal md-effect-11" id="modal-2">
+			<div class="md-content">
+				<h3>Modal Dialog</h3>
+				<div>
+					<p>This is a modal window. You can do the following things with it:</p>
+					<ul>
+						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Close:</strong> click on the button below to close the modal.</li>
+					</ul>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>	
+		</div>
+		<div class="md-modal md-effect-11" id="modal-3">
+			<div class="md-content">
+				<h3>Modal Dialog</h3>
+				<div>
+					<p>This is a modal window. You can do the following things with it:</p>
+					<ul>
+						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Close:</strong> click on the button below to close the modal.</li>
+					</ul>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>	
+		</div>
+		<div class="md-modal md-effect-11" id="modal-4">
+			<div class="md-content">
+				<h3>Modal Dialog</h3>
+				<div>
+					<p>This is a modal window. You can do the following things with it:</p>
+					<ul>
+						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Close:</strong> click on the button below to close the modal.</li>
+					</ul>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>	
+		</div>
+		<div class="md-modal md-effect-11" id="modal-5">
+			<div class="md-content">
+				<h3>Modal Dialog</h3>
+				<div>
+					<p>This is a modal window. You can do the following things with it:</p>
+					<ul>
+						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Close:</strong> click on the button below to close the modal.</li>
+					</ul>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>	
+		</div>
+		<div class="md-modal md-effect-11" id="modal-6">
+			<div class="md-content">
+				<h3>Modal Dialog</h3>
+				<div>
+					<p>This is a modal window. You can do the following things with it:</p>
+					<ul>
+						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Close:</strong> click on the button below to close the modal.</li>
+					</ul>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>	
+		</div>
+
+		<div class="container-fluid profile ">
+			<div class="row">
+				<div class="col-md-5 col-sm-4 col-xs-12 left-profile  wow slideInRight">
+					<div >
+						<div class="circular"></div>
+						
+					</div>
+				</div>
+				
+				<div class="col-md-7 col-sm-4 col-xs-12 " >
+                    <div class="container-fluid"> 
+                    	<div class="row">
+		                    <div class="col-md-4 col-sm-6 wow slideInLeft">
+		                    	<section class="content">
+									
+									<div class="box bg-1">
+										<button class="profile-button button--pipaluk button--text-thick md-trigger" data-modal="modal-1">
+											Profile
+										</button>
+									</div>
+								</section>
 								
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-8 col-sm-4 col-xs-12">
-                            <h2 class=""> </h2>
+		                    </div>
+		                    <div class="col-md-4 col-sm-6 wow fadeInUp">
+		                    	<section class="content">
+									
+									<div class="box bg-1">
+										<button class="profile-button button--pipaluk button--text-thick md-trigger" data-modal="modal-2">
+											Bio
+										</button>							
+									</div>
+								</section>
+		                    </div>
+		                    <div class="col-md-4 col-sm-6 wow slideInRight">
+		                    	<section class="content">
+									
+									<div class="box bg-1">
+										<button class="profile-button button--pipaluk button--text-thick md-trigger" data-modal="modal-3">
+											Add to Cart
+										</button>						
+									</div>
+								</section>
+		                    </div>
+		                 </div>
+		                 <div class="row">
+		                    <div class="col-md-4 col-sm-6 wow slideInLeft">
+		                    	<section class="content">
+									
+									<div class="box bg-1">
+										<button class="profile-button button--pipaluk button--text-thick md-trigger" data-modal="modal-4">
+											Add to Cart
+										</button>						
+									</div>
+								</section>
+		                    </div><div class="col-md-4 col-sm-6 wow fadeInUp">
+		                    	<section class="content">
+									
+									<div class="box bg-1">
+										<button class="profile-button button--pipaluk button--text-thick md-trigger" data-modal="modal-5">
+											Add to Cart
+										</button>
+									</div>
+								</section>
+		                    </div>
+		                    <div class="col-md-4 col-sm-6 wow slideInRight">
+		                    	<section class="content">
+									
+									<div class="box bg-1">
+										<button class="profile-button button--pipaluk button--text-thick md-trigger" data-modal="modal-6">
+											Add to Cart
+										</button>
+									</div>
+								</section>
+		                    </div>
+		                 </div>
+		             </div>
+                </div>                   <!-- / grid -->
+					
+            </div>
+        </div>
+        <div class="md-overlay"></div><!-- the overlay element -->
 
-							<div class="container-fluid">
-				                
-				                <div class="row">
+		<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script src="js/modalEffects.js"></script>
 
-				                    <div class="col-md-6 col-sm-12 ">
-
-										<section class="pfold-main demo-2">
-											
-											<div id="grid" class="grid clearfix">
-											
-												<div class="uc-container wow fadeInLeft">
-													<div class="uc-initial-content" style= "background: #fff url(images/thumbs/bio.png) no-repeat center center" >
-														<p class= "profile-title"> Bio </p>
-														
-														<span class="icon-eye">  </span>
-													</div>
-													<div class="uc-final-content" style= "background: #fff url(images/thumbs/bio.png) no-repeat center center" >
-														<div class="profile_content">
-                                                            Popularly known as Faisal in his
-                                                            family, Shakib Al Hasan was a very intelligent and clever boy.
-                                                            His father was a very good football player and wanted his
-                                                            son to be one as well. But Shakib had other interests.
-                                                            Even at a very young age, Shakib used to earn a fair amount of
-                                                            money as he used to be hired to play for different villages.
-                                                            In one of these matches Shakib impressed an umpire who arranged for him
-                                                            to practice with the Islampur Para Club, a team in the
-                                                            Magura Cricket League. During the practice session, Shakib batted
-                                                            aggressively and bowled fast, as he usually did, but also chose to
-                                                            experiment with spin bowling and proved effective.
-                                                        </div>
-														<div class="title"></div>
-														<span class="icon-cancel"></span>
-													</div>
-												</div><!-- / uc-container -->
-
-												<div class="uc-container wow fadeInRight">
-													<div class="uc-initial-content" style= "background: #fff url(images/thumbs/2.png) no-repeat center center" >
-														<p class= "profile-title"> Bio </p>
-														
-														<span class="icon-eye">  </span>
-													</div>
-													<div class="uc-final-content"  style= "background: #fff url(images/thumbs/2.png) no-repeat center center">
-														<div class="profile_content"> Popularly known as Faisal in his family, Shakib Al Hasan was a very intelligent and clever boy. His father was a very good football player and wanted his son to be one as well. But Shakib had other interests. Even at a very young age, Shakib used to earn a fair amount of money as he used to be hired to play for different villages. In one of these matches Shakib impressed an umpire who arranged for him to practice with the Islampur Para Club, a team in the Magura Cricket League. During the practice session, Shakib batted aggressively and bowled fast, as he usually did, but also chose to experiment with spin bowling and proved effective.
-</div>
-														<div class="title"></div>
-														<span class="icon-cancel"></span>
-													</div>
-												</div><!-- / uc-container -->
-
-												<div class="uc-container wow fadeInLeft" >
-													<div class="uc-initial-content"  style= "background: #fff url(images/thumbs/ball.png) no-repeat center center">
-														<p class= "profile-title"> Bio </p>
-														
-														<span class="icon-eye">  </span>
-													</div>
-													<div class="uc-final-content"  style= "background: #fff url(images/thumbs/ball.png) no-repeat center center">
-														<div class="profile_content"> Popularly known as Faisal in his family, Shakib Al Hasan was a very intelligent and clever boy. His father was a very good football player and wanted his son to be one as well. But Shakib had other interests. Even at a very young age, Shakib used to earn a fair amount of money as he used to be hired to play for different villages. In one of these matches Shakib impressed an umpire who arranged for him to practice with the Islampur Para Club, a team in the Magura Cricket League. During the practice session, Shakib batted aggressively and bowled fast, as he usually did, but also chose to experiment with spin bowling and proved effective.
-</div>
-														<div class="title"></div>
-														<span class="icon-cancel"></span>
-													</div>
-												</div><!-- / uc-container -->
-
-												<div class="uc-container  wow fadeInRight">
-													<div class="uc-initial-content"  style= "background: #fff url(images/thumbs/bat.png) no-repeat center center">
-														<p class= "profile-title"> Bio </p>
-														
-														<span class="icon-eye">  </span>
-													</div>
-													<div class="uc-final-content"  style= "background: #fff url(images/thumbs/bat.png) no-repeat center center">
-														<div class="profile_content"> Popularly known as Faisal in his family, Shakib Al Hasan was a very intelligent and clever boy. His father was a very good football player and wanted his son to be one as well. But Shakib had other interests. Even at a very young age, Shakib used to earn a fair amount of money as he used to be hired to play for different villages. In one of these matches Shakib impressed an umpire who arranged for him to practice with the Islampur Para Club, a team in the Magura Cricket League. During the practice session, Shakib batted aggressively and bowled fast, as he usually did, but also chose to experiment with spin bowling and proved effective.
-</div>
-														<div class="title"></div>
-														<span class="icon-cancel"></span>
-													</div>
-												</div><!-- / uc-container -->
-												<div class="uc-container wow fadeInLeft">
-													<div class="uc-initial-content" style= "background: #fff url(images/thumbs/stamp.png) no-repeat center center" >
-														<p class= "profile-title"> Bio </p>
-														
-														<span class="icon-eye">  </span>
-													</div>
-													<div class="uc-final-content" style= "background: #fff url(images/thumbs/stamp.png) no-repeat center center" >
-														<div class="profile_content"> Popularly known as Faisal in his family, Shakib Al Hasan was a very intelligent and clever boy. His father was a very good football player and wanted his son to be one as well. But Shakib had other interests. Even at a very young age, Shakib used to earn a fair amount of money as he used to be hired to play for different villages. In one of these matches Shakib impressed an umpire who arranged for him to practice with the Islampur Para Club, a team in the Magura Cricket League. During the practice session, Shakib batted aggressively and bowled fast, as he usually did, but also chose to experiment with spin bowling and proved effective.
-</div>
-														<div class="title"></div>
-														<span class="icon-cancel"></span>
-													</div>
-												</div><!-- / uc-container -->
-												<div class="uc-container wow fadeInLeft">
-													<div class="uc-initial-content" style= "background: #fff url(images/thumbs/helmet.jpg) no-repeat center center" >
-														<p class= "profile-title"> Bio </p>
-														
-														<span class="icon-eye">  </span>
-													</div>
-													<div class="uc-final-content" style= "background: #fff url(images/thumbs/helmet.jpg) no-repeat center center" >
-														<div class="profile_content"> Popularly known as Faisal in his family, Shakib Al Hasan was a very intelligent and clever boy. His father was a very good football player and wanted his son to be one as well. But Shakib had other interests. Even at a very young age, Shakib used to earn a fair amount of money as he used to be hired to play for different villages. In one of these matches Shakib impressed an umpire who arranged for him to practice with the Islampur Para Club, a team in the Magura Cricket League. During the practice session, Shakib batted aggressively and bowled fast, as he usually did, but also chose to experiment with spin bowling and proved effective.
-</div>
-														<div class="title"></div>
-														<span class="icon-cancel"></span>
-													</div>
-												</div><!-- / uc-container -->
-											</div>
-                                            <!-- / grid -->
-											
-										</section>
-										<script type="text/javascript" src="js/jquery.pfold.js"></script>
-										<script type="text/javascript">
-											$(function() {
-
-												// say we want to have only one item opened at one moment
-												var opened = false;
-
-												$( '#grid > div.uc-container' ).each( function( i ) {
-
-													var $item = $( this);
-                                                    var direction;
-
-													switch( i ) {
-														case 0 : direction = ['right','bottom']; break;
-														case 1 : direction = ['left','bottom']; break;
-														case 2 : direction = ['right','top']; break;
-														case 3 : direction = ['left','top']; break;
-													}
-													
-													var pfold = $item.pfold( {
-														folddirection : direction,
-														speed : 300,
-														onEndFolding : function() { opened = false; }
-													} );
-
-													$item.find( 'span.icon-eye' ).on( 'click', function() {
-
-														if( !opened ) {
-															opened = true;
-															pfold.unfold();
-														}
-
-
-													} ).end().find( 'span.icon-cancel' ).on( 'click', function() {
-
-														pfold.fold();
-
-													} );
-
-												} );
-												
-											});
-										</script>
-
-						            </div>
-					            </div>
-				            </div>
-                        </div>
-                    </div>
-                </div>
-			</section><!--<section id="service">
-           
-        </section>-->
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="js/cssParser.js"></script>
+		<script src="js/css-filters-polyfill.js"></script>
+					
         <!--
         End # Profile
         ========================== -->
+		<!-- =========================
+		       Career Statistics
+		    ============================== -->
 
+		    <section id="our-skills" class="our-skills">
+		        <div class="container-fluid padding-top-large wow slideInLeft animated" data-wow-delay="0.3s" style= "visibility: visible; -webkit-animation-delay: 0.3s;">
+		            <h2>
+		                 
+		                <strong class="bold-text"> Career</strong>
+		                <span class="light-text main-color">Statistics</span>
+		            </h2>
+		<!--
+
+		            #count
+        ========================== -->
+        
+        <section id="count">
+            <div class="container wow slideInLeft animated" data-wow-delay="0.3s" style= "visibility: visible; -webkit-animation-delay: 0.3s;">
+                <div class="row">
+                    <div class="counter-section clearfix">
+
+                        <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.5s">
+                            <div class="fact-item text-center">
+                                <div class="fact-icon">
+                                    <i class="fa fa-check-square fa-lg"></i>
+                                </div>
+                                <span data-to="120">0</span>
+                                <p>Completed Projects</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.8s">
+                            <div class="fact-item text-center">
+                                <div class="fact-icon">
+                                    <i class="fa fa-users fa-lg"></i>                                    
+                                </div>
+                                <span data-to="152">0</span>
+                                <p>Satisfied Clients</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="1.1s">
+                            <div class="fact-item text-center last">
+                                <div class="fact-icon">
+                                    <i class="fa fa-clock-o fa-lg"></i>
+                                </div>
+                                <span data-to="2500">0</span>
+                                <p>Working Hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="1.3s">
+                            <div class="fact-item text-center last">
+                                <div class="fact-icon">
+                                    <i class="fa fa-trophy fa-lg"></i>
+                                </div>
+                                <span data-to="150">0</span>
+                                <p>Award Won</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+        End #count
+        ========================== -->
+
+        <!-- =============
+        Tab Circlefill
+        ====================================-->
+        <section>
+				<div class="tabs tabs-style-circlefill">
+					<nav>
+						<ul>
+							<li><a href="#section-circlefill-1" class="icon icon-plug"><span>Connect</span></a></li>
+							<li><a href="#section-circlefill-2" class="icon icon-gift"><span>Gifts</span></a></li>
+							<li><a href="#section-circlefill-3" class="icon icon-box"><span>Boxes</span></a></li>
+							<li><a href="#section-circlefill-4" class="icon icon-date"><span>Prints</span></a></li>
+							<li><a href="#section-circlefill-5" class="icon icon-plane"><span>Fun</span></a></li>
+						</ul>
+					</nav>
+					<div class="content-wrap">
+						<section id="section-circlefill-1"><p>1</p></section>
+						<section id="section-circlefill-2"><p>2</p></section>
+						<section id="section-circlefill-3"><p>3</p></section>
+						<section id="section-circlefill-4"><p>4</p></section>
+						<section id="section-circlefill-5"><p>5</p></section>
+					</div><!-- /content -->
+				</div> <!-- /tabs -->
+			</section>
+
+		           <!--  <div class="line main-bg margin-bottom-medium"></div>
+		            <div class="row">
+		                <div class="col-md-12">
+		                    <ul class="graph-container">
+			                    <li>
+			                        <span>2008</span>
+			                        <div class="bar-wrapper">
+			                            <div class="bar-container">
+			                                <div class="bar-background"></div>
+			                                <div class="bar-inner">25</div>
+			                                <div class="bar-foreground"></div>
+			                            </div>
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <span>2009</span>
+			                        <div class="bar-wrapper">
+			                            <div class="bar-container">
+			                                <div class="bar-background"></div>
+			                                <div class="bar-inner">50</div>
+			                                <div class="bar-foreground"></div>
+			                            </div>
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <span>2010</span>
+			                        <div class="bar-wrapper">
+			                            <div class="bar-container">
+			                                <div class="bar-background"></div>
+			                                <div class="bar-inner">75</div>
+			                                <div class="bar-foreground"></div>
+			                            </div>
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <span>2011</span>
+			                        <div class="bar-wrapper">
+			                            <div class="bar-container">
+			                                <div class="bar-background"></div>
+			                                <div class="bar-inner">100</div>
+			                                <div class="bar-foreground"></div>
+			                            </div>
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <span>2012</span>
+			                        <div class="bar-wrapper">
+			                            <div class="bar-container">
+			                                <div class="bar-background"></div>
+			                                <div class="bar-inner">50</div>
+			                                <div class="bar-foreground"></div>
+			                            </div>
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <ul class="graph-marker-container">
+			                            <li style="bottom:25%;"><span>25%</span></li>
+			                            <li style="bottom:50%;"><span>50%</span></li>
+			                            <li style="bottom:75%;"><span>75%</span></li>
+			                            <li style="bottom:100%;"><span>100%</span></li>
+			                        </ul>
+			                    </li>
+			                </ul>
+
+		                </div> -->
+		                
+		                <div class="clearfix"></div>
+		            </div> <!-- *** end row *** -->
+		        </div> <!-- *** end container *** -->
+		    </section> <!-- *** end Our Skills *** -->
     <!-- =========================
       Career Statistics
     ============================== -->
-    <section id="about-us" class="about-us">
+   
+     <section id="about-us" class="about-us">
         <div class="overlay">
             <div class="container padding-top-large">
                 <h2>
@@ -626,16 +758,17 @@
             </div>
         </div>
     </section> <!-- *** end About Us *** -->
-
-
+    
     <!-- =========================
        Case Study
     ============================== -->
-    <section id="case-study" class="case-study">
+
+<section id="case-study" class="case-study">
         <div class="row mar-none mat-none">
 
             <!-- *****  Case Study Left ***** -->
             <div class="col-md-6 case-study-left wow slideInLeft">
+
                 <div class="overlay padding-large text-right">
                     <div class="description">
                         <h3 class="margin-bottom-small light-text">We are revoulutionizing marketing.</h3>
@@ -656,7 +789,9 @@
                 </div>
             </div>
         </div>
-    </section> <!-- *** end Case Study *** -->
+    </section> 
+
+<!-- *** end Case Study *** -->
 
 
     <!-- =========================
@@ -730,45 +865,7 @@
     </section> <!-- *** end Why Choose Us *** -->
 
 
-    <!-- =========================
-       Our Skills
-    ============================== -->
-    <section id="our-skills" class="our-skills">
-        <div class="container padding-top-large">
-            <h2>
-                Our
-                <strong class="bold-text">Skills</strong>
-                <span class="light-text main-color">Are</span>
-            </h2>
-            <div class="line main-bg margin-bottom-medium"></div>
-            <div class="row">
-                <div class="col-md-7">
-                    <ul class="skill-bar">
-                        <li>
-                            <p>Print Design</p>
-                            <div class="wrapper"><span data-width="90"></span></div>
-                        </li>
-                        <li>
-                            <p>Web Design</p>
-                            <div class="wrapper"><span data-width="80"></span></div>
-                        </li>
-                        <li>
-                            <p>Mobile App Design</p>
-                            <div class="wrapper"><span data-width="85"></span></div>
-                        </li>
-                        <li>
-                            <p>Creativity</p>
-                            <div class="wrapper"><span data-width="65"></span></div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-5">
-                    <img src="img/skill-bg.jpg" class="center-block img-responsive" alt="Our Skills are excellent">
-                </div>
-                <div class="clearfix"></div>
-            </div> <!-- *** end row *** -->
-        </div> <!-- *** end container *** -->
-    </section> <!-- *** end Our Skills *** -->
+    
 
 
     <!-- =========================
@@ -1554,5 +1651,18 @@
 	    <script src="js/isotope.pkgd.min.js"></script>
 	    <script src="js/imagesloaded.pkgd.min.js"></script>
 	    <script src="js/main.js"></script>
+	     <!-- countTo -->
+        <script src="js/jquery-countTo.js"></script>
+        <script src="js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>
+
 	</body>
 </html>

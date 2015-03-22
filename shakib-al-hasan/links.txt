@@ -5,3 +5,9 @@ http://html5up.net/landed
 http://tympanus.net/Development/ModalWindowEffects/
 
 http://tympanus.net/Development/PFold/index3.html
+
+
+http://tympanus.net/Tutorials/CSS3FluidParallaxSlideshow/
+http://tympanus.net/Tutorials/CSS3ContentTabs/index2.html
+http://tympanus.net/Development/ParallaxContentSlider/index2.html
+http://tympanus.net/Tutorials/CSS3FullscreenSlideshow/index2.html

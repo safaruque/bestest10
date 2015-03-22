@@ -184,16 +184,7 @@ h6 {
 .button.light {
   border: 2px solid #eeeeee;
 }
-.button.like{
-  padding: 12px 0px;
-  margin-left: 50px;
-}
-.button.share{
-  padding-top: 10px;
-  padding-left: 5px;
-  color: #2C3E50;
-  font-size: 13px;
-}
+
 .padding-large {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -596,6 +587,7 @@ header.navbar-fixed-top {
 header {
   position: relative;
 }
+
 #slider div.overlay {
   position: absolute;
   top: 0;
@@ -604,6 +596,7 @@ header {
   width: 100%;
   background: url(../img/slider-overlay.png) repeat;
 }
+
 header h1 span.header-title{
   font-family:Amaze; 
   font-weight: 700; 
@@ -626,56 +619,7 @@ header span.circular{
   margin-right: 20px;
   border: 2px solid #8B8B8B;
 }
-header .carousel,
-header .item,
-header .active {
-  height: 100%;
-}
-.carousel-inner {
-  min-height: 500px;
-  height: 100%;
-}
-div#header-carousel div.item h1.light{
-  margin: 110px 0px 50px;
-  height: 100px;
-}
-.small-text{
-  font-size: 30px;
-letter-spacing:  .3em;
-}
-.fill {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-.carousel-indicators li {
-  width: 40px;
-  height: 4px;
-  border: none;
-  border-radius: 0;
-  background: #fff;
-}
-.carousel-indicators .active {
-  width: 40px;
-  height: 5px;
-  background:  #3399CC;
-}
-.carousel-caption {
-  top: 25%;
-}
-.carousel-caption h1 {
-  font-size: 48px;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-.carousel-control.left,
-.carousel-control.right {
-  background: none;
-}
+
 .icon-prev,
 .icon-next {
   font-size: 60px !important;
@@ -690,31 +634,68 @@ header .logo-container {
   2.2 Component: Call To ACTION
  ========================================================================== */
 .call-to-action {
-  padding: 10px;
-  color: #fff;
-  font-size: 18px;
-  position: relative;
-  background: linear-gradient(to left, #fff 50%, #2C3E50 50%);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-
+   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
+
+.button.like{
+  padding: 12px 0px;
+  margin-left: 50px;
+}
+
+.button.share{
+ 
+  padding: 12px 5px 0px;
+  color: #2C3E50;
+  font-size: 13px;
+}
+
 .call-to-action p {
   margin: 20px;
 }
+
 .call-to-action div.left_calltoaction{
   background: #2C3E50;
   color: #ECF0F1;
+  padding: 15px 120px ;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
-.call-to-action span.like_text{
+.call-to-action div.right_calltoaction{
   color: #2C3E50;
-  font-size: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.like-calltoaction{
+  padding: 15px 80px;
+  font-weight: 600;
 }
 
 /*============================================================
     Profile
 ============================================================*/
+.profile{
+  background: #ECF0F1;
+  padding: 20px 0px;
+}
 
+.left-profile{
+  margin: 70px auto;
+}
+
+.circular{
+    background: url(../images/11.jpg) no-repeat;
+    background-position: -70px 0px;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+     /*box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+     margin: 0 auto;
+     border: 10px solid #3498DB; 
+}
 #three .spotlight{
   height:100%;
 }
@@ -1048,8 +1029,71 @@ td {
   transition: all .85s;
 }
 /* ========================================================================
-  2.6 Component: Our Skills
+  2.6 Component: Career Statistics
  ========================================================================== */
+ #count {
+  background-color: #fff;
+  padding-bottom: 90px;
+  margin-top: 60px;
+}
+.counter-section {
+  background-color: #2C3E50;
+  padding: 25px 0 40px;
+}
+.fact-item {
+  color: #fff;
+}
+.text-center {
+  text-align: center;
+}
+.fact-icon {
+  position: relative;
+  width: 50px;
+  height: 28.87px;
+  background-color: #1F2021;
+  margin: 14.43px auto;
+}
+.fact-icon > i {
+  line-height: 27px;
+}
+.fact-item span {
+  display: block;
+  font-size: 50px;
+  line-height: 42px;
+  font-weight: 700;
+  margin: 28px 0 20px;
+}
+
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fact-icon:before {
+  bottom: 100%;
+  border-bottom: 15px solid #1F2021;
+}
+.fact-icon:before, .fact-icon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+
+
+
+
 .skill-bar li .wrapper {
   margin-bottom: 30px;
   border-radius: 3px;
