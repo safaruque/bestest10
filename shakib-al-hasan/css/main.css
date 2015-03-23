@@ -674,7 +674,6 @@ header .logo-container {
     Profile
 ============================================================*/
 .profile{
-  background: #ECF0F1;
   padding: 20px 0px;
 }
 
@@ -1033,7 +1032,6 @@ td {
  ========================================================================== */
  #count {
   background-color: #fff;
-  padding-bottom: 90px;
   margin-top: 60px;
 }
 .counter-section {
