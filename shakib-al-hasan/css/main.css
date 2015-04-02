@@ -677,7 +677,7 @@ header .logo-container {
 
 .like-calltoaction{
   padding: 15px 80px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /*============================================================
@@ -937,8 +937,8 @@ td {
   text-align: center;
 }
 .versus{
-  font-size: 13px;
-  color: red;
+  font-size: 16px;
+  
 }
 .about-us {
   background: url("../img/about-us-bg.jpg") no-repeat center fixed;
@@ -997,6 +997,7 @@ td {
 /* ========================================================================
   2.4 Component: Case Study
  ========================================================================== */
+
 .case-study .col-md-6 {
   padding: 0;
   cursor: pointer;
@@ -1016,10 +1017,12 @@ td {
 .case-study .case-study-left {
   background: url("../img/case-study/bf-left.jpg") no-repeat;
   background-size: cover;
+  height: 363px;
 }
 .case-study .case-study-right {
   background: url("../img/case-study/bf-right.jpg") no-repeat;
   background-size: cover;
+  height: 363px;
 }
 .case-study .overlay:hover {
   width: 100%;
