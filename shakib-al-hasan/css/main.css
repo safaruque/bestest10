@@ -130,6 +130,15 @@ h5,
 h6 {
   margin: 0;
 }
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border: 1px solid rgb(215, 205, 205);
+}
+th, td{
+  border: 1px solid rgb(215, 205, 205);
+}
 /* Browser Upgrade Prompt
  ========================================================================== */
 .browserupgrade {
@@ -582,6 +591,7 @@ border-bottom: 1px solid #636364;
 header.navbar-fixed-top {
     background: rgba(51, 153, 204, 0.40);
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    border-top: 3px solid #E43737;
 }
 
 header {
@@ -899,6 +909,37 @@ td {
 /* ========================================================================
   2.3 Component: About Us
  ========================================================================== */
+.engineTable {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 0px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  line-height: normal;
+}
+
+.engineTable th {
+  padding: 7px 3px 9px 6px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #222222;
+  text-align: center;
+  background: rgb(154, 157, 160);
+}
+
+.engineTable td {
+  padding: 7px 3px 9px 6px;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #222222;
+  text-align: center;
+}
+.versus{
+  font-size: 13px;
+  color: red;
+}
 .about-us {
   background: url("../img/about-us-bg.jpg") no-repeat center fixed;
   background-size: cover;
@@ -915,6 +956,7 @@ td {
 .about-us p {
   color: #484848;
   line-height: 24px;
+  padding-top: 20px;
 }
 .about-us img {
   margin-top: -50px;
@@ -925,7 +967,7 @@ td {
   box-shadow: none;
 }
 .panel-default > .panel-heading {
-  background:  #363942;
+  background:  #2C3E50;
   color: #f3eff0;
   cursor: pointer;
   border-radius: 3px;
@@ -1035,7 +1077,7 @@ td {
   margin-top: 60px;
 }
 .counter-section {
-  background-color: #2C3E50;
+  /*background-color: #2C3E50;*/
   padding: 25px 0 40px;
 }
 .fact-item {
