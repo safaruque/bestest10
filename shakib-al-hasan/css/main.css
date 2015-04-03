@@ -1275,12 +1275,14 @@ td {
   2.9 Component: Testimonail
  ========================================================================== */
 .testimonial {
-  background: url(../img/testimonial-bg.png);
+  background: url(../img/testimonial-bg-1.png);
 }
 .testimonial-carousel .item {
   padding: 25px 40px 40px;
   background: rgba(34, 34, 34, 0.8);
   border-radius: 4px;
+  opacity: 0.7;
+  border: 1px solid #494545;
 }
 .testimonial-carousel .item p {
   font-style: italic;
@@ -1310,6 +1312,15 @@ td {
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
   background:  #3399CC;
+}
+
+/*=========================================================================
+News
+==========================================================================*/
+.subtitle h3 {
+  color: #1f2021;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 /* ========================================================================
   2.10 Component: Portfolio
