@@ -591,7 +591,11 @@ border-bottom: 1px solid #636364;
 header.navbar-fixed-top {
     background: rgba(51, 153, 204, 0.40);
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    border-top: 3px solid #E43737;
+}
+header.navbar-fixed-top .top-border{
+    background: url("../images/top-border.png");
+    height: 2px;
+    width: 100%;
 }
 
 header {
