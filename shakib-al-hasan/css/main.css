@@ -650,6 +650,7 @@ header .logo-container {
  ========================================================================== */
 .call-to-action {
    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
 }
 
 .button.like{
@@ -1276,6 +1277,12 @@ td {
 .our-team .description .member-skill {
   display: inline-block;
 }
+.fb-share{
+  background: #EFECEC;
+  padding:30px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
 /* ========================================================================
   2.9 Component: Testimonail
  ========================================================================== */
@@ -1463,6 +1470,11 @@ News
   background: url("../img/twitter-bg.jpg") no-repeat center top fixed;
   background-size: cover;
   color: #fff;
+}
+ .subscription-border {
+  background: url(../images/border-1.jpg);
+  height: 6px;
+  margin-bottom: 40px;
 }
 .twitter .overlay {
   background: rgba(27, 28, 29, 0.9);
