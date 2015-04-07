@@ -592,12 +592,12 @@ border-bottom: 1px solid #636364;
  ========================================================================== */
 
 header.navbar-fixed-top {
-    background: rgba(51, 153, 204, 0.40);
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    border-bottom: 1px solid #666;
 }
 header.navbar-fixed-top .top-border{
     background: url("../images/top-border.png");
-    height: 2px;
+    height: 1px;
     width: 100%;
 }
 
@@ -615,10 +615,8 @@ header {
 }
 
 header h1 span.header-title{
-  font-family:Amaze; 
-  font-weight: 700; 
-  font-size: 30px;   
-  letter-spacing: 0.5em;
+  font-family:Amaze;
+  font-size: 30px;
   color: #fff;
 }
 
