@@ -1,3 +1,4 @@
+
 .demo-1 .sl-slider-wrapper {
 	position: absolute;
 	width: 100%;
@@ -357,12 +358,15 @@
 
 .demo-2 .bg-img-1 {
 	background-image: url(../../images/1.jpg);
+	background-position: -2px -350px
 }
 .demo-2 .bg-img-2 {
 	background-image: url(../../images/2.jpg);
+
 }
 .demo-2 .bg-img-3 {
 	background-image: url(../../images/3.jpg);
+	background-position: 22px 3px
 }
 .demo-2 .bg-img-4 {
 	background-image: url(../../images/4.jpg);

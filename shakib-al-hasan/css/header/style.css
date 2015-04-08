@@ -1,3 +1,7 @@
+.padding-slider{
+	padding-top: 240px;
+}
+
 .sl-slider-wrapper {
 	width: 800px;
 	height: 400px;
@@ -106,6 +110,7 @@
 /* Default styles for background colors */
 .sl-slide-horizontal .sl-slide-inner {
 	background: #ddd;
+
 }
 
 .sl-slide-vertical .sl-slide-inner {

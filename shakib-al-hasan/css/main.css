@@ -621,7 +621,8 @@ header h1 span.header-title{
 }
 
 header span.circular{
-  background:  url(../images/shakib-small.jpg) no-repeat;
+  background:  url(../images/small-1.jpg) no-repeat;
+  background-position: -5px 2px;
   width: 30px;
   height: 30px;
   border-radius: 150px;
@@ -632,7 +633,7 @@ header span.circular{
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   margin-right: 20px;
-  border: 2px solid #8B8B8B;
+  border: 1px solid #575656;
 }
 
 .icon-prev,
@@ -689,6 +690,156 @@ header .logo-container {
 /*============================================================
     Profile
 ============================================================*/
+.lazy-load-box{
+  transition: all 900ms ease; 
+  -webkit-transition: all 900ms ease; 
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  -o-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  -ms-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+
+.block_2 {
+  position: relative;
+  padding: 12px 0 0;
+}
+.posts-grid {
+  margin: 0;
+}
+.posts-grid:before, .posts-grid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.posts-grid li .featured-thumbnail {
+  margin: 0;
+}
+.thumbnail{
+  min-height: 36px;
+  background: url('../images/loading_32.gif') 50% 50% no-repeat;
+  background: url('../images/loading_32.gif') 50% 50% no-repeat, url('../images/loading_bg_32.png') 50% 50% no-repeat;
+
+}
+.featured-thumbnail {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 5px 20px 10px 0;
+}
+*[class*="thumbnail"] {
+  border-color: #DDD;
+}
+.zoom-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  background: transparent !important;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: 0.55s;
+  -moz-transition: 0.55s;
+  -o-transition: 0.55s;
+  transition: 0.55s;
+}
+.zoom-icon:before {
+  position: absolute;
+  left: -50%;
+  top: 48%;
+  display: block;
+  margin: 0;
+  height: 0%;
+  width: 200%;
+  background: url(images/hover_bg.png);
+  content: "";
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  overflow: hidden;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.65s;
+  -moz-transition: 0.65s;
+  -o-transition: 0.65s;
+  transition: 0.65s;
+}
+.zoom-icon:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 45px;
+  height: 47px;
+  margin-top: -23px;
+  margin-left: -23px;
+  background: url(./images/zoom-icon.png) no-repeat 0 0;
+  content: "";
+  visibility: hidden;
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: 0.45s;
+  -moz-transition: 0.45s;
+  -o-transition: 0.45s;
+  transition: 0.45s;
+}
+.block_2 li .cont {
+  position: relative;
+  display: block;
+  border: 1px solid #dcdada;
+  text-align: center;
+  padding: 46px 13% 40px;
+  margin-bottom: 28px;
+  background: #fff;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.block_2 li .cont h5 {
+  position: relative;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 23px;
+}
+.block_2 li .cont .post_metabox {
+  position: relative;
+  font: normal 12px/18px 'Roboto', sans-serif;
+  color: #a3a3a3;
+  margin-bottom: 21px;
+}
+.block_2 li .cont p {
+  position: relative;
+  margin-bottom: 29px;
+}
+.block_2 li .cont:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 22px;
+  top: -22px;
+  left: 0;
+  content: "";
+  background: url('./images/arr_cont.png') 50% 0 no-repeat;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
 .profile{
   padding: 20px 0px;
 }
@@ -1168,7 +1319,7 @@ td {
   2.7 Component: Processes
  ========================================================================== */
 .processes {
-  background: url("../img/process-bg.jpg") no-repeat center fixed;
+  background: url("../img/process-bg-1.jpg") no-repeat center fixed;
   background-size: cover;
   color: #fffeff;
 }
