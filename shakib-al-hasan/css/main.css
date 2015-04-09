@@ -1480,6 +1480,28 @@ td {
 /*=========================================================================
 News
 ==========================================================================*/
+.portfolio-wrap{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    transition: height 450ms ease-out 0s;
+    -webkit-transition: height 450ms ease-out 0s;
+    -o-transition: height 450ms ease-out 0s;
+}
+.single-portfolio{
+    display: block;
+    overflow: hidden;
+    padding: 0px;
+    float:left;
+    border: 1px solid #fff;
+    margin-left:-4px;
+    margin-top:-4px;
+    background: red;
+
+    
+}
 .subtitle h3 {
   color: #1f2021;
   margin-bottom: 30px;

@@ -29,9 +29,10 @@
 		<link rel="stylesheet" type="text/css" href="fonts/vicons/vicons-font.css" />
 		<!-- <link rel="stylesheet" type="text/css" href="css/base.css" /> -->
 		<link rel="stylesheet" type="text/css" href="css/share.css" />
-        <script type="text/javascript" src="js/vendor/jquery-1.11.1.js"></script>
 		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
-		<script type="text/javascript" src="js/modernizr.min.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery-1.11.1.js"></script>
+		
+		<!--<script type="text/javascript" src="js/modernizr.min.js"></script>-->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 
 
@@ -155,9 +156,18 @@
        Header
     ============================== -->
     
-        <div class="container-fluid  demo-2">
-           <div id="slider" class="sl-slider-wrapper">
+        <div class="container-fluid demo-2">
+		
+			<!-- Codrops top bar -->
+            <div class="codrops-top clearfix">
+               
+                <div class="clr"></div>
+            </div><!--/ Codrops top bar -->
+
+            <div id="slider" class="sl-slider-wrapper">
+
 				<div class="sl-slider">
+				
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 						<div class="sl-slide-inner padding-slider ">
 							<div class="bg-img bg-img-1"></div>
@@ -175,7 +185,6 @@
 							<!-- <h2>Regula aurea.</h2> -->
 							<blockquote><p>Shakib was ranked No. 1 among the allrounders by the ICC</blockquote>
 						</div>
-						<div class="overlay"></div>
 					</div>
 					
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
@@ -184,7 +193,6 @@
 							<!-- <h2>Dum spiro, spero.</h2> -->
 							<blockquote><p>Consistent performer of his country.</p> </blockquote>
 						</div>
-						<div class="overlay"></div>
 					</div>
 					
 					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
@@ -193,7 +201,6 @@
 							<!-- <h2>Donna nobis pacem.</h2> -->
 							<blockquote><p>Shakib played in eight of Kolkata's 18 matches and won two Man of the Match awards</p> </blockquote>
 						</div>
-						<div class="overlay"></div>
 					</div>
 					
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
@@ -202,7 +209,6 @@
 							<!-- <h2>Acta Non Verba.</h2> -->
 							<blockquote><p>Shakib was signed by the Melbourne Renegades to play in the Big Bash League. .</p> </blockquote>
 						</div>
-						<div class="overlay"></div>
 					</div>
 				</div><!-- /sl-slider -->
 				
@@ -221,59 +227,83 @@
 
 			</div><!-- /slider-wrapper -->
 
-			<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
-			<script type="text/javascript" src="js/jquery.slitslider.js"></script>
-			<script type="text/javascript">	
-				$(function() {
 			
-					var Page = (function() {
-						var $navArrows = $( '#nav-arrows' ),
+
+        </div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+		<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ),
 						$nav = $( '#nav-dots > span' ),
 						slitslider = $( '#slider' ).slitslider( {
 							onBeforeChange : function( slide, pos ) {
 
 								$nav.removeClass( 'nav-dot-current' );
 								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
 							}
 						} ),
 
 						init = function() {
 
 							initEvents();
+							
 						},
 						initEvents = function() {
+
 							// add navigation events
 							$navArrows.children( ':last' ).on( 'click', function() {
+
 								slitslider.next();
 								return false;
+
 							} );
 
 							$navArrows.children( ':first' ).on( 'click', function() {
+								
 								slitslider.previous();
 								return false;
+
 							} );
 
 							$nav.each( function( i ) {
+							
 								$( this ).on( 'click', function( event ) {
+									
 									var $dot = $( this );
 									
 									if( !slitslider.isActive() ) {
 
 										$nav.removeClass( 'nav-dot-current' );
 										$dot.addClass( 'nav-dot-current' );
+									
 									}
+									
 									slitslider.jump( i + 1 );
 									return false;
+								
 								} );
+								
 							} );
-						};
-						return { init : init };
-					})();
-				Page.init();
-				});
-			</script>
-        </div>
 
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+
+				
+			
+			});
+		</script>
     <!-- =========================
        Call to action
     ============================== -->
@@ -1115,137 +1145,104 @@
        Our Team
     ============================== -->
     <section id="our-team" class="our-team">
-        <div class="container padding-top-large">
-             <div class="row">
-                <div class="col-md-5  wow fadeInLeft">
-                	<div class="subtitle text-center">
-                        <h2 class="wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".5s">
-			                Our
-			                <strong class="bold-text">Awesome</strong>
-			                <span class="light-text main-color">Team</span>
-			            </h2>
-                    </div>
-
-                	<div id="testimonial">
-						<div class="grid">
-							<figure class="effect-apollo wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".5s">
-								<img src="images/8.jpg" alt="img18"/>
+        <div class="container-fluid padding-top-large">
+        	<div class="row">
+        		<div class="text-center ">
+		              <ul class="portfolio-wrap" id="portfolio_items">
+		                    <li class="col-xs-12 col-sm-6 col-md-4 single-portfolio identity web-design">
+		                        <div class="grid">
+									<figure class="effect-jazz">
+										<img src="images/2.jpg" alt="img25"/>
+										<figcaption>
+											<h2>Dynamic <span>Jazz</span></h2>
+											<p>When Jazz starts to chase cars, the whole world stands still.</p>
+											<a href="#">View more</a>
+										</figcaption>			
+									</figure>
+									
+								</div>
 								<div class="overlay"></div>
-								<figcaption>
-									<h2>Strong <span>Apollo</span></h2>
-									<p>Apollo's last game of pool was so strange.</p>
-									<a href="#">View more</a>
-								</figcaption>			
-							</figure>
-							<figure class="effect-apollo wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".5s">
-								<img src="images/1.jpg" alt="img22"/>
-								<figcaption>
-									<h2>Strong <span>Apollo</span></h2>
-									<p>Apollo's last game of pool was so strange.</p>
-									<a href="#">View more</a>
-								</figcaption>			
-							</figure>
-						</div>
-					</div> <!-- end #testimonial -->
-                </div> <!-- end .col-md-5 -->
+		                    </li>
 
-                <div class="col-md-5 col-md-offset-2 ">
+		                    <li class="col-xs-12 col-sm-6 col-md-4 single-portfolio logo graphic">
+		                        <div class="grid">
+									<figure class="effect-jazz">
+										<img src="images/2.jpg" alt="img25"/>
+										<figcaption>
+											<h2>Dynamic <span>Jazz</span></h2>
+											<p>When Jazz starts to chase cars, the whole world stands still.</p>
+											<a href="#">View more</a>
+										</figcaption>			
+									</figure>
+									
+								</div>
+		                    </li>
 
-                    <div class="subtitle text-center">
-                        <h2 class="wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".5s">
-		                
-		                <strong class="bold-text">News</strong>
-		                <!-- <span class="light-text main-color">Team</span> -->
-		            	</h2>
-                    </div>
+		                    <li class="col-xs-12 col-sm-6 col-md-4 single-portfolio graphic logo">
+		                        <div class="grid">
+									<figure class="effect-jazz">
+										<img src="images/2.jpg" alt="img25"/>
+										<figcaption>
+											<h2>Dynamic <span>Jazz</span></h2>
+											<p>When Jazz starts to chase cars, the whole world stands still.</p>
+											<a href="#">View more</a>
+										</figcaption>			
+									</figure>
+									
+								</div>
+		                    </li>
 
-                   <div class="grid">
-						<figure class="effect-apollo wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".5s">
-							<img src="images/8.jpg" alt="img18"/>
-							<div class="overlay"></div>
-							<figcaption>
-								<h2>Strong <span>Apollo</span></h2>
-								<p>Apollo's last game of pool was so strange.</p>
-								<a href="#">View more</a>
-							</figcaption>			
-						</figure>
-						<figure class="effect-apollo wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".5s">
-							<img src="images/1.jpg" alt="img22"/>
-							<figcaption>
-								<h2>Strong <span>Apollo</span></h2>
-								<p>Apollo's last game of pool was so strange. <strong>Learn More</strong></p>
-								
-                            <!--     <p> <strong>Learn More</strong> </p> -->
-                           
-							</figcaption>			
-						</figure>
-					</div>
-                </div>  <!-- end .col-md-5 -->
+		                   
 
-            </div>
-            
-           
-                <!-- ***** Team member 1 section ***** -->
-              
+		                    <li class="col-xs-12 col-sm-6 col-md-4 single-portfolio logo web-design">
+		                        <div class="grid">
+									<figure class="effect-jazz">
+										<img src="images/2.jpg" alt="img25"/>
+										<figcaption>
+											<h2>Dynamic <span>Jazz</span></h2>
+											<p>When Jazz starts to chase cars, the whole world stands still.</p>
+											<a href="#">View more</a>
+										</figcaption>			
+									</figure>
+									
+								</div>
+		                    </li>
+
+		                    <li class="col-xs-12 col-sm-6 col-md-4 single-portfolio logo graphic">
+		                        <div class="grid">
+									<figure class="effect-jazz">
+										<img src="images/2.jpg" alt="img25"/>
+										<figcaption>
+											<h2>Dynamic <span>Jazz</span></h2>
+											<p>When Jazz starts to chase cars, the whole world stands still.</p>
+											<a href="#">View more</a>
+										</figcaption>			
+									</figure>
+									
+								</div>
+		                    </li>
+
+		                    <li class="col-xs-12 col-sm-6 col-md-4 single-portfolio graphic identity">
+		                        <div class="grid">
+									<figure class="effect-jazz">
+										<img src="images/2.jpg" alt="img25"/>
+										<figcaption>
+											<h2>Dynamic <span>Jazz</span></h2>
+											<p>When Jazz starts to chase cars, the whole world stands still.</p>
+											<a href="#">View more</a>
+										</figcaption>			
+									</figure>
+									
+								</div>
+		                    </li>
+
+		                    
+
+		                </ul>
+		        </div>
+        	</div>
         </div>
     </section> <!-- *** end Our Team *** -->
-
-
-    <!-- <div class="container-fluid fb-share">
-	   	<div class="row">
-	   		
-        	<div class="col-md-12 "> 
-				<div class="content">
-					<div class="share">
-						<button class="share-toggle-button">
-							<i class="share-icon fa fa-share-alt"></i>
-						</button>
-						<ul class="share-items">
-							<li class="share-item">
-								<a href="#" class="share-button">
-									<i class="share-icon fa fa-facebook"></i>
-								</a>
-							</li>
-							<li class="share-item">
-								<a href="#" class="share-button">
-									<i class="share-icon fa fa-twitter"></i>
-								</a>
-							</li>
-							<li class="share-item">
-								<a href="#" class="share-button">
-									<i class="share-icon fa fa-pinterest"></i>
-								</a>
-							</li>
-							<li class="share-item">
-								<a href="#" class="share-button">
-									<i class="share-icon fa fa-tumblr"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-	   		</div>
-        </div>
-	</div> 
- -->
-
-    <!-- =========================
-       Promote
-    ============================== -->
-    <!-- <section id="promote" class="promote main-bg white-color">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-1 col-md-5 col-sm-4 text-center">
-                    <p class="light-text">Hire us! We make you smile :)</p>
-                </div>
-                <div class="col-lg-6 col-lg-offset-1 col-md-7 col-sm-8 button-container">
-                    <a href="#" class="button deep hvr-grow">Request a Quote</a>
-                    <span class="margin-right-small margin-left-small">or</span>
-                    <a href="#" class="button light hvr-grow">Hire Us</a>
-                </div>
-            </div>
-        </div>
-    </section>  --><!-- *** end promote *** -->
 
 
     <!-- =========================
@@ -1470,8 +1467,8 @@
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 		<script src="js/queryloader2.min.js"></script>
 	   
-	    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&amp;sensor=false"></script>-->
-	    <!--<script src="js/twitterFetcher_min.js"></script>-->
+	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&amp;sensor=false"></script>
+	    <script src="js/twitterFetcher_min.js"></script>
 	    <script src="js/vendor/bootstrap.js"></script>
 	    <script src="js/wow.min.js"></script>
 	    <script src="js/jquery.easing.min.js"></script>
@@ -1484,10 +1481,7 @@
 	    <script src="js/main.js"></script>
 	    <script src="js/TweenMax.min.js"></script>
 		<script src="js/share.js"></script>
-	     <!-- countTo -->
-        <script src="js/jquery-countTo.js"></script>
-        <script src="js/cbpFWTabs.js"></script>
-        <script src="js/photostack.js"></script>
+		<script src="js/photostack.js"></script>
 		<script>
 			// [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
 			
@@ -1507,15 +1501,14 @@
 				}
 			} );
 		</script>
+
 		<script>
-			(function() {
-
-				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
-					new CBPFWTabs( el );
-				});
-
-			})();
+			// For Demo purposes only (show hover effect on mobile devices)
+			[].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
+				el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
+			} );
 		</script>
+	
 
 	</body>
 </html>
