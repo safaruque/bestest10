@@ -32,8 +32,8 @@
 }
 
 .share-button {
-  font-size: 50px;
-  background: #9AA2FA;
+  font-size: 30px;
+  background: #18945D;
   -webkit-transform: scale(0.95, 0.95);
   transform: scale(0.95, 0.95);
   color: #222;
