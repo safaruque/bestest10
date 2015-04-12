@@ -730,6 +730,9 @@ header .logo-container {
   text-align: center;
   background: #191a1c;
 }
+.team{
+  padding-left: 49px;
+}
 .team .thumbnail {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -737,10 +740,10 @@ header .logo-container {
   padding: 10px;
   border: 1px solid #B8B0B0;
 }
-.span4{
-  width: 352px;
-  margin-left: 20px;
-  float: left;
+.margin-profile {
+  
+  margin-right: 30px;
+  
 }
 .team .thumbnail .mask {
   background: #74B7F9;
