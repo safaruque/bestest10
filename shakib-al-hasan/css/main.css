@@ -810,14 +810,14 @@ header .logo-container {
   text-align: justify;
 }
 .mask-a{
-  color: #000;
+  color: #f0f0f0;
   font-weight: 500;
   text-decoration: underline;
   text-align: right;
 }
 
 .mask-a:hover{
-  color: red;
+    color: rgb(45, 47, 62);
 }
 .lazy-load-box{
   transition: all 900ms ease; 
@@ -1212,7 +1212,7 @@ td {
   text-decoration: none;
   color: #222222;
   text-align: center;
-  background: rgb(154, 157, 160);
+  background: rgb(217, 221, 226);
 }
 
 .engineTable td {
@@ -1223,6 +1223,20 @@ td {
   color: #222222;
   text-align: center;
 }
+
+table.profile{
+    border: none;
+}
+.md-content table.profile td{
+    border: none;
+    text-align: left;
+    border-top: 1px dashed #E4E4E4;
+}
+
+.md-content table.profile td.first{
+    border-top: none;
+}
+
 .versus{
   font-size: 16px;
   
@@ -1400,6 +1414,9 @@ td {
   vertical-align: -15%;
 }
 
+.profile.fa{
+    font-size: 50px;
+}
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
