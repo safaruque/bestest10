@@ -77,19 +77,19 @@
 		<!-- =========================
        	Preloader
     	============================== -->
-    	<script>
-	        window.addEventListener('DOMContentLoaded', function() {
-	            "use strict";
-	            new QueryLoader2(document.querySelector("body"), {
-	                barColor: "#e74c3c",
-	                backgroundColor: "#111",
-	                percentage: true,
-	                barHeight: 1,
-	                minimumTime: 200,
-	                fadeOutTime: 1000
-	            });
-	        });
-	    </script>
+    	 <script>
+	    //     window.addEventListener('DOMContentLoaded', function() {
+	    //         "use strict";
+	    //         new QueryLoader2(document.querySelector("body"), {
+	    //             barColor: "#e74c3c",
+	    //             backgroundColor: "#111",
+	    //             percentage: true,
+	    //             barHeight: 1,
+	    //             minimumTime: 200,
+	    //             fadeOutTime: 1000
+	    //         });
+	    //     });
+	    // </script>
 
     </head>
 
@@ -157,7 +157,7 @@
        Header
     ============================== -->
     
-        <div class="container-fluid demo-2">
+        <div class="container-fluid demo-2 wow fadeInUp" >
 		
 			<!-- Codrops top bar -->
             <div class="codrops-top clearfix">
@@ -312,7 +312,7 @@
     <!-- =========================
        Call to action
     ============================== -->
-	    <div class="container-fluid fb-share">
+	    <div class="container-fluid fb-share wow slideInLeft">
 		   	<div class="row">
 		   		
 	        	<div class="col-md-12 "> 
@@ -348,26 +348,7 @@
 		   		</div>
 	        </div>
 		</div> 
-    	<!-- <div class="container-fluid call-to-action">
-    	   	<div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12 left_calltoaction " >
-                    <p class=" wow fadeInDown animated" data-wow-delay="0.2s " style= "visibility: visible; -webkit-animation-delay: 0.2s;"> &#8917 1 All rounder in all three formats of cricket</p>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 right_calltoaction"  >
-                    <div class="like-calltoaction wow fadeInDown animated" data-wow-delay="0.3s" style= "visibility: visible; -webkit-animation-delay: 0.3s;" > 
-                    		<a href="#portfolio" class="button like internal-link pull-left hvr-grow" data-rel="#portfolio"> 
-                    	 		<i> <img src="images/like_button.jpg" > </i>
-                    		</a>
-                    		 <a href="#portfolio" class="button share internal-link pull-left hvr-grow" style="padding-top:12px; " data-rel="#portfolio"> 
-                    	 		<i > <img src="images/share.jpg" > </i> 
-                   			</a> 
-                   			<p> 14,23,454,656 people like this.</p>
-                	</div>
-                    <div class="text-calltoaction"> </div>
-                </div>
-            </div>
-   		</div>  -->
-   		<!-- *** end call-to-action *** -->
+    	
 
     	<!-- ============================= 
     	Profile
@@ -408,7 +389,9 @@
 								</table>
 							<li>
 					</ul>
-					<button class="md-close">Close me!</button>
+					<div class="md-close">
+					  <a href="#" class="close-classic"></a>
+					</div>
 				</div>
 			</div>	
 		</div>
@@ -422,7 +405,9 @@
 						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
 						<li><strong>Close:</strong> click on the button below to close the modal.</li>
 					</ul>
-					<button class="md-close">Close me!</button>
+					<div class="md-close">
+					  <a href="#" class="close-classic"></a>
+					</div>
 				</div>
 			</div>	
 		</div>
@@ -483,7 +468,7 @@
 			</div>	
 		</div>
 
-		<div class="container-fluid profile ">
+		<div class="container-fluid profile wow slideInRight ">
 			<div class="row">
 				 
 				<div class=" col-md-10 col-md-offset-1 section primary-section" id="about">
@@ -501,16 +486,17 @@
                             <img src="images/1.jpg" alt="team 1">
                             
                             <div class="social">
-                                <h3>  Shakib Al Hasan</h3>
+                                <h3>  Profile </h3> 
                             </div>
                             <div class="mask">
                                 <h2>Profile</h2>
-                                <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
-                                <a href="#" class=" md-trigger" data-modal="modal-1" > Learn More</a>
+                                <br>
+                                <p> is a Bangladeshi international cricketer. He is regarded as one of the greatest Bengali cricketers of all time.[1][2] In January 2015, he attained the #1 All-Rounder ranking in all three forms of the cricket (Test, ODI and T20)</p>
+                                <a href="#" class=" md-trigger mask-a" data-modal="modal-1" > Learn More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 margin-profile wow animated pulse" data-wow-delay="0.5s" id="second-person">
+                    <div class="col-md-3 margin-profile wow animated pulse" data-wow-delay="0.7s" id="second-person">
                         <div class="thumbnail">
                             <img src="images/2.jpg" alt="team 1">
                             <div class="social">
@@ -518,12 +504,13 @@
                             </div>
                             <div class="mask">
                                 <h2>Designer</h2>
+                                <br>
                                 <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
-                                <a href="#" class=" md-trigger" data-modal="modal-1" > Learn More</a>
+                                <a href="#" class=" md-trigger mask-a" data-modal="modal-1" > Learn More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 margin-profile wow animated pulse" id="third-person">
+                    <div class="col-md-3 margin-profile wow animated pulse" data-wow-delay="0.9s" id="third-person">
                         <div class="thumbnail">
                             <img src="images/3.jpg" alt="team 1">
                             <div class="social">
@@ -531,8 +518,9 @@
                             </div>
                             <div class="mask">
                                 <h2>Photographer</h2>
+                                <br>
                                 <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
-                                <a href="#" class=" md-trigger" data-modal="modal-1" > Learn More</a>
+                                <a href="#" class=" md-trigger mask-a" data-modal="modal-1" > Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -1207,10 +1195,15 @@
     <!-- =========================
        Our Team
     ============================== -->
-    <section id="our-team" class="our-team">
+    <section id="our-team" class="our-team text-center">
         <div class="container-fluid padding-top-large">
-        	<div class="row">
-        		<div class="text-center ">
+        	<div class="row wow slideInLeft">
+        		 <h2>
+                    Social &
+                    <strong class="main-color bold-text">News</strong>
+                </h2>
+                <div class="line main-bg " ;"></div>
+        		<div >
 		              <ul class="portfolio-wrap" id="portfolio_items">
 		                    <li class="col-xs-12 col-sm-6 col-md-4 single-portfolio identity web-design">
 		                        <div class="grid">
@@ -1254,9 +1247,6 @@
 									
 								</div>
 		                    </li>
-
-		                   
-
 		                    <li class="col-xs-12 col-sm-6 col-md-4 single-portfolio logo web-design">
 		                        <div class="grid">
 									<figure class="effect-jazz">
@@ -1298,9 +1288,6 @@
 									
 								</div>
 		                    </li>
-
-		                    
-
 		                </ul>
 		        </div>
         	</div>
@@ -1311,12 +1298,13 @@
     <!-- =========================
        Portfolio
     ============================== -->
+    
     <section id="portfolio" class="portfolio  text-center">
         <div class="container-fluid ">
-            <div class="row  wow fadeInUp">
+            <div class="row  wow slideInRight">
                 <h2>
-                    Our
-                    <strong class="main-color bold-text">Portfolios</strong>
+                    My
+                    <strong class="main-color bold-text">Gallery</strong>
                 </h2>
                 <div class="line main-bg"></div>
 
@@ -1325,7 +1313,8 @@
                     <div id="photostack-1" class="photostack photostack-start">
 						<div>
 							<figure>
-								<a href="http://goo.gl/Qw3ND4" class="photostack-img"><img src="img/1.jpg" alt="img01"/></a>
+								<a href="#image-1" class="photostack-img"><img src="img/1.jpg" alt="img01"/></a>
+								
 								<figcaption>
 									<h2 class="photostack-title">Serenity Beach</h2>
 								</figcaption>
@@ -1448,25 +1437,7 @@
 					</div>
                 </div>
             </div> <!-- *** end row *** -->
-
-            <!-- *****  Portfolio Filters ***** -->
-           <!--  <div class="filters">
-                <ul class="wow lightSpeedIn">
-                    <li><a href="#" data-filter="*" class="active">All</a></li>
-                    <li><a href="#" data-filter=".print">Print Media</a></li>
-                    <li><a href="#" data-filter=".icon">Icon Design</a></li>
-                    <li><a href="#" data-filter=".photography">Photography</a></li>
-                    <li><a href="#" data-filter=".web-design">Web Design</a></li>
-                    <li><a href="#" data-filter=".ui">UI</a></li>
-                </ul>
-            </div> --> <!-- *** end filters *** -->
         </div> <!-- *** end container *** -->
-
-        <!-- *****  Portfolio  wrapper ***** -->
-       
-
-           
-        </div> <!-- *** end  portfolio-wrapper *** -->
     </section> <!-- *** end Portfolio *** -->
 
 
@@ -1474,38 +1445,98 @@
        Twitter
     ============================== -->
     
-    <section id="twitter" class="twitter">
+    <section id="twitter" class="twitter ">
+    	<div class="container-fluid  text-center masked ">
+    		<div class="row">
+    			<div class="col-md-12 subscription-border"></div>
+    		</div>
+    		<div class="row">
+                <div class="col-md-12 ">
+                	<div class="branded-section contact-form  wow fadeInDown delay2">
+						<div >
+							<div class="container">
+								
+								<form class="form-horizontal">
+									<div class="form-group">
+										<div class="col-sm-4" style="position:relative">
+											<input type="text" name="Name" data-new-placeholder="What is your name?" class="form-control label_better" placeholder="Name">
+										</div>
+										<div class="col-sm-4">
+											<input type="text" name="Email" class="form-control label_better" placeholder="Email">
+										</div>
+										<div class="col-sm-4">
+											<button class="button button--shikoba button--round-s button--border-thin">
+				                        		<i class="fa fa-envelope-o"></i>
+				                        		<span class="subscription-margin">Get Update</span>
+				                        	</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="container-fluid padding-footer text-center overlay  wow fadeInUp delay3">
+		                    <div class="row">
+		                        <div class="col-md-10 col-md-offset-1">
+		                            <figure >
+		                                <img src="img/logo.png" class="footer-logo" alt="Krefolio">
+		                            </figure>
+		                            
+		                            <p class="copyright">
+		                                &copy; Copyright 2015 - All rights reserved
+		                            </p>
+		                        </div>
+		                    </div>
+		                </div>
+					</div>
+                </div>
+            </div>
 
-        <div class="overlay">
-        	<div class="subscription-border"> </div>
-            <div class="container-fluid  text-center">
+    	</div>
+
+    	
+
+        <!-- <div class="overlay">
+        	<div class="container-fluid  text-center ">
+        		<div class="row">
+        			<div class="col-md-12 subscription-border"></div>
+        		</div>
                 <div class="row">
                     <div class="col-md-12 ">
                         <div class="content bgcolor-4">
-							
-							<span class="input input--akira">
-								<input class="input__field input__field--akira" type="text" id="input-22" />
-								<label class="input__label input__label--akira" for="input-22">
-									<span class="input__label-content input__label-content--akira">First Name</span>
-								</label>
-							</span>
-							<span class="input input--akira">
-								<input class="input__field input__field--akira" type="text" id="input-23" />
-								<label class="input__label input__label--akira" for="input-23">
-									<span class="input__label-content input__label-content--akira">Last Name</span>
-								</label>
-							</span>
-							<span class="input input--akira">
-								<input class="input__field input__field--akira" type="text" id="input-24" />
-								<label class="input__label input__label--akira" for="input-24">
-									<span class="input__label-content input__label-content--akira">Maiden Name</span>
-								</label>
-							</span>
-						</div>
-                       
-                    </div>
+                        	<div class="container">
+                        		<div class="row">
+                        			<div class="col-md-4">
+	                        			<span class="input input--akira">
+											<input class="input__field input__field--akira" type="text" id="input-22" />
+											<label class="input__label input__label--akira" for="input-22">
+												<span class="input__label-content input__label-content--akira">Full Name</span>
+											</label>
+										</span>
+			                        </div>
+			                        <div class="col-md-4">
+			                        		<span class="input input--akira">
+											<input class="input__field input__field--akira" type="text" id="input-23" />
+											<label class="input__label input__label--akira" for="input-23">
+												<span class="input__label-content input__label-content--akira">Email Address</span>
+											</label>
+										</span>
+			                        </div>
+			                        <div class="col-md-4">
+			                        	<button class="button button--shikoba button--round-s button--border-thin">
+			                        		<i class="fa fa-envelope-o"></i>
+			                        		<span class="subscription-margin">Get Update</span>
+			                        	</button>
+				
+									</div>
+
+									</div>
+								</div>
+							</div>                       
+                    	</div>
+                	</div>
                 </div>
-                <div class="container-fluid padding-footer text-center overlay">
+                           
+            	<div class="container-fluid padding-footer text-center overlay">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
                             <figure >
@@ -1519,7 +1550,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section> <!-- *** end Twitter *** -->
 
 
@@ -1530,7 +1561,7 @@
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 		<script src="js/queryloader2.min.js"></script>
 	   
-	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&amp;sensor=false"></script>
+	    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&amp;sensor=false"></script>-->
 	    <script src="js/twitterFetcher_min.js"></script>
 	    <script src="js/vendor/bootstrap.js"></script>
 	    <script src="js/wow.min.js"></script>
@@ -1545,6 +1576,7 @@
 	    <script src="js/TweenMax.min.js"></script>
 		<script src="js/share.js"></script>
 		<script src="js/photostack.js"></script>
+		<script type="text/javascript" src="js/jquery.label_better.js"></script>
 		<script>
 			// [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
 			

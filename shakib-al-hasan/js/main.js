@@ -148,7 +148,15 @@ $(document).ready(function () {
   }
   //twitterFetcher.fetch(config);
 
+//Efext on labels on contact form
+$("input.label_better, textarea.label_better").label_better({
+  animationTime: 500,
+  easing: "bounce",
+  offset: 0,
+  hidePlaceholderOnFocus: true
+});
 
+$("#Grid").mixitup({});
   /* ========================================================================
     Portfolio Filter
    ========================================================================== */

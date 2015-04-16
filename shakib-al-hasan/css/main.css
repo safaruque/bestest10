@@ -261,6 +261,27 @@ th, td{
   visibility: hidden;
 }
 
+.delay1 {
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+.delay2 {
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+
+.delay3 {
+  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+}
+.delay4 {
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+}
+.delay5 {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
 
 /*====================================================
     Fixed Navigation
@@ -756,7 +777,7 @@ header .logo-container {
   filter: alpha(opacity=85);
   top: 100%;
   left: 0;
-  padding: 10px;
+  padding: 100px 30px;
   width: 100%;
   height: 100%;
   background: #F4EB8E;
@@ -770,7 +791,7 @@ header .logo-container {
 .thumbnail > img {
   display: block;
   width: 400px;
-  height: 400px;
+  height: 300px;
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -782,8 +803,22 @@ header .logo-container {
     
     position:relative;
     margin:20px auto;
+    text-align: center;
+
+}
+.mask p{
+  text-align: justify;
+}
+.mask-a{
+  color: #000;
+  font-weight: 500;
+  text-decoration: underline;
+  text-align: right;
 }
 
+.mask-a:hover{
+  color: red;
+}
 .lazy-load-box{
   transition: all 900ms ease; 
   -webkit-transition: all 900ms ease; 
@@ -1051,6 +1086,7 @@ margin: 30px auto;
  /* color:#fff; */
   text-align: left;
   padding: 5px;
+  width: 100%;
 
 }
 td {
@@ -1574,12 +1610,17 @@ td {
 /*=========================================================================
 News
 ==========================================================================*/
+.our-team .line{
+
+  margin: 15px auto 45px;
+}
+
 .portfolio-wrap{
     position: relative;
     display: block;
     width: 100%;
     padding: 0px;
-    margin: 0px;
+    margin: 60px 0px;
     transition: height 450ms ease-out 0s;
     -webkit-transition: height 450ms ease-out 0s;
     -o-transition: height 450ms ease-out 0s;
@@ -1604,6 +1645,113 @@ News
 /* ========================================================================
   2.10 Component: Portfolio
  ========================================================================== */
+ .lb-overlay {
+  width: 0px;
+  height: 0px;
+  position: fixed;
+  overflow: hidden;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+  z-index: 99;
+  text-align: center;
+  background: rgb(241,210,194);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%, rgba(241,210,194,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.56)), color-stop(100%,rgba(241,210,194,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+  background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+}
+.lb-overlay > div{
+  position: relative;
+  color: rgba(27,54,81,0.8);
+  opacity: 0;
+  filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+  width: 550px;
+  margin: 10px auto 0px auto;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+  -webkit-transition: opacity 0.3s linear 1.3s;
+  -moz-transition: opacity 0.3s linear 1.3s;
+  -o-transition: opacity 0.3s linear 1.3s;
+  -ms-transition: opacity 0.3s linear 1.3s;
+  transition: opacity 0.3s linear 1.3s;
+}
+.lb-overlay a.lb-close{
+  background: rgba(27,54,81,0.8);
+  z-index: 1001;
+  color: #fff;
+  position: absolute;
+  top: 43px;
+  left: 50%;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  width: 50px;
+  height: 23px;
+  overflow: hidden;
+  margin-left: -25px;
+  opacity: 0;
+  filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+  -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+  -webkit-transition: opacity 0.3s linear 1.2s;
+  -moz-transition: opacity 0.3s linear 1.2s;
+  -o-transition: opacity 0.3s linear 1.2s;
+  -ms-transition: opacity 0.3s linear 1.2s;
+  transition: opacity 0.3s linear 1.2s;
+}
+.lb-overlay img{
+  /* height: 100%; For Opera max-height does not seem to work */
+  max-height: 100%;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+}
+.lb-overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0px;
+  right: 0px;
+  padding: 80px 100px 120px 100px;
+}
+.lb-overlay:target img {
+  -webkit-animation: fadeInScale 1.2s ease-in-out;
+  -moz-animation: fadeInScale 1.2s ease-in-out;
+  -o-animation: fadeInScale 1.2s ease-in-out;
+  -ms-animation: fadeInScale 1.2s ease-in-out;
+  animation: fadeInScale 1.2s ease-in-out;
+}
+.lb-overlay:target a.lb-close,
+.lb-overlay:target > div{
+  opacity: 1;
+  filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+@-webkit-keyframes fadeInScale {
+  0% { -webkit-transform: scale(0.6); opacity: 0; }
+  100% { -webkit-transform: scale(1); opacity: 1; }
+}
+@-moz-keyframes fadeInScale {
+  0% { -moz-transform: scale(0.6); opacity: 0; }
+  100% { -moz-transform: scale(1); opacity: 1; }
+}
+@-o-keyframes fadeInScale {
+  0% { -o-transform: scale(0.6); opacity: 0; }
+  100% { -o-transform: scale(1); opacity: 1; }
+}
+@-ms-keyframes fadeInScale {
+  0% { -ms-transform: scale(0.6); opacity: 0; }
+  100% { -ms-transform: scale(1); opacity: 1; }
+}
+@keyframes fadeInScale {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
 .portfolio .line {
   margin: 15px auto 45px;
 }
@@ -1680,68 +1828,109 @@ News
 .filters li:last-child > a:after {
   content: "";
 }
-/* ========================================================================
-  2.11 Component: Promote
- ========================================================================== */
-.promote {
-  padding: 25px;
-  color: #eeeeee;
-  font-size: 18px;
-  position: relative;
-}
-.promote p {
-  margin: 20px;
-}
-.promote .button {
-  display: inline-block;
-}
-.promote .deep {
-  background:  #3399CC;
-}
-/* ========================================================================
-  2.12 Component: We are hiring
- ========================================================================== */
-.we-are-hiring {
-  background: #f4f4f4;
-  border-top: 1px solid #e5e5e5;
-}
-.we-are-hiring h2 {
-  color: #3a3a3a;
-  font-size: 36px;
-}
-.we-are-hiring p {
-  color: #666666;
-  font-size: 16px;
-  line-height: 28px;
-}
-.we-are-hiring .upload-cv {
-  background: #fff;
-  height: 300px;
-  width: 300px;
-  margin: 20px auto 0;
-  padding: 15px;
-  border: 1px solid #dbd8d8;
-}
-.we-are-hiring .upload-cv .inner {
-  padding: 65px;
-  border: 2px dashed #dbd8d8;
-  color: #666666;
-}
-.we-are-hiring .inner i {
-  font-size: 80px;
-}
+
+
 /* ========================================================================
   2.13 Component: Twitter
  ========================================================================== */
 .twitter {
-  background: url("../img/twitter-bg.jpg") no-repeat center top fixed;
+  background: url("../img/twitter-bg-2.jpg") no-repeat center top fixed;
   background-size: cover;
   color: #fff;
+}
+.branded-section {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+.masked {
+  background: rgba(19, 19, 22, 0.5);
+  background-image: url('../images/patern.png');
+  width: 100%;
+  height: 100%;
+  display: block;
+  /*padding-bottom: 50px;*/
+}
+.contact-form form {
+  position: relative;
+}
+.form-horizontal .form-group {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.lb_wrap {
+  width: 95%;
+  height: 100%;
+  display: inline-block !important;
+}
+.contact-form .form-control {
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: #fff;
+  border-width: 2px;
+}
+.form-control {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 15px;
+  padding: 20px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.contact-form form {
+  position: relative;
+  padding-top: 70px;
+}
+.contact-form .form-control {
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: #fff;
+  border-width: 2px;
+}
+.contact-form .form-control:focus {
+  border: 2px solid #1C88CA;
+}
+.contact-form .form-control:focus {
+  background: rgba(255, 255, 255, 0.1);
+}
+.contact-form .heading {
+  color: #fff;
+}
+.commands {
+  text-align: center;
 }
  .subscription-border {
   background: url(../images/border-1.jpg);
   height: 6px;
   margin-bottom: 40px;
+}
+.subscription-mmargin{
+  margin-bottom: 10px;
 }
 .twitter .overlay {
   background: rgba(27, 28, 29, 0.9);
@@ -1763,6 +1952,11 @@ News
 .twitter .tweet-text {
   font-size: 16px;
   line-height: 1.5em;
+}
+.copyright{
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  font-family: inherit;
+  font-weight: 200;
 }
 /* ========================================================================
   2.14 Component: Map
@@ -1858,9 +2052,10 @@ News
  ========================================================================== */
  .padding-footer{
 
-    padding-top: 60px;
+    padding-top: 10px;
     padding-bottom: 30px;
     opacity: 1;
+    margin-top: 85px;
  }
 .footer p {
   color: #bababa;

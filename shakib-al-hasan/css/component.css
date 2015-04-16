@@ -111,6 +111,21 @@ perspective effects (not including the modals and the overlay).
 	  font-weight: 500;
 }
 
+[class*='close-'] {
+  color: #fff;
+  font: 25px/100% arial, sans-serif;
+  position: absolute;
+  
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  top: 15px;
+  right: 15px;
+}
+
+.close-classic:after {
+  content: 'X'; /* ANSI X letter */
+}
+
 /* Individual modal styles with animations/transitions */
 
 /* Effect 1: Fade in and scale up */
