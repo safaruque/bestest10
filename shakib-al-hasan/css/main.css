@@ -759,7 +759,7 @@ header .logo-container {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 10px;
-  border: 1px solid #B8B0B0;
+  border: 1px solid #EAEAEA;
 }
 .margin-profile {
   
@@ -767,10 +767,10 @@ header .logo-container {
   
 }
 .team .thumbnail .mask {
-  background: #74B7F9;
+  background: #837f89;
 }
 .team .thumbnail .mask, .team .thumbnail .mask h3, .team .thumbnail .mask p, .team .thumbnail:hover h3, .team .thumbnail:hover .social a:hover {
-  color: #181A17;
+  color: #FFFFFF;
 }
 .thumbnail .mask {
   opacity: 0.85;
