@@ -156,7 +156,6 @@ $("input.label_better, textarea.label_better").label_better({
   hidePlaceholderOnFocus: true
 });
 
-$("#Grid").mixitup({});
   /* ========================================================================
     Portfolio Filter
    ========================================================================== */
