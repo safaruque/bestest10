@@ -791,7 +791,7 @@ header .logo-container {
 .thumbnail > img {
   display: block;
   width: 400px;
-  height: 300px;
+  height: 460px;
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -970,7 +970,7 @@ header .logo-container {
   transition: all 0.4s ease;
 }
 .profile{
-  padding: 20px 0px;
+  padding: 20px 0px 80px;
 }
 
 .left-profile{
