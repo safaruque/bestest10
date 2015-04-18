@@ -17,13 +17,16 @@ perspective effects (not including the modals and the overlay).
 	-moz-perspective: 600px;
 	perspective: 600px;
 }
-
+.gallery-image img{
+	width:400px;
+	height: 400px;
+}
 .md-modal {
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	width: 50%;
-	max-width: 630px;
+	/*max-width: 630px;*/
 	min-width: 320px;
 	height: auto;
 	z-index: 2000;
@@ -65,6 +68,7 @@ perspective effects (not including the modals and the overlay).
 .md-content {
 	color: #fff;
 	background: #e8f6fd;
+	width: 750px;
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
@@ -624,7 +628,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 .md-show.md-effect-18 ~ .md-overlay {
-	background: rgba(143,27,15,0.8);
+	background: rgba(120, 171, 221, 0.8);
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
