@@ -104,12 +104,15 @@
 
 .nav-dots {
 	text-align: center;
-	position: absolute;
-	bottom: 2%;
-	height: 30px;
-	width: 100%;
-	left: 0;
-	z-index: 1000;
+  position: absolute;
+  bottom: 0%;
+  height: 40px;
+  width: 100%;
+  left: 0;
+  padding-top: 5px;
+  z-index: 1000;
+  background: black;
+  opacity: .6;
 }
 
 .nav-dots span {

@@ -1214,6 +1214,18 @@ td {
   text-align: center;
   background: rgb(217, 221, 226);
 }
+.engineTable .best-performance th{
+    background: rgb(198, 200, 203);
+  font-size: 15px;
+  border: 1px solid rgb(229, 229, 229);
+  
+}
+.engineTable .best-stat-heading th{
+    background: rgb(217, 221, 226);
+  font-size: 14px;
+  border: 1px solid rgb(229, 229, 229);
+  
+}
 
 .engineTable td {
   padding: 7px 3px 9px 6px;
@@ -1247,7 +1259,8 @@ table.profile{
   position: relative;
 }
 .about-us .overlay {
-  background: rgba(238, 238, 238, 0.95);
+  /*background: rgba(238, 238, 238, 0.95);*/
+  background: rgba(241, 241, 247, 0.9);;
 }
 .about-us .jumbo-text {
   text-transform: uppercase;
@@ -1268,12 +1281,15 @@ table.profile{
   box-shadow: none;
 }
 .panel-default > .panel-heading {
-  background:  #2C3E50;
+  background: #A0A1A1;
   color: #f3eff0;
   cursor: pointer;
+  width: 98%;
+  margin-left: 12px;
   border-radius: 3px;
   box-shadow: 1px 1px 1px #d7d7d7, -1px -1px 1px #d7d7d7;
 }
+
 .panel-heading {
   padding: 0;
 }
@@ -1376,6 +1392,10 @@ table.profile{
 /* ========================================================================
   2.6 Component: Career Statistics
  ========================================================================== */
+ .about-us .line{
+
+  margin: 15px auto 45px;
+}
  #count {
   background-color: #fff;
   margin-top: 60px;
@@ -1402,7 +1422,7 @@ table.profile{
 }
 .fact-item span {
   display: block;
-  font-size: 50px;
+  font-size: 30px;
   line-height: 42px;
   font-weight: 700;
   margin: 28px 0 20px;
@@ -2063,6 +2083,76 @@ News
 .form-control::-webkit-input-placeholder {
   color: #DBDBDB;
   font-style: italic;
+}
+
+/*================ Loader=========================*/
+/* DEMO 2 */
+
+/*.demo-2 body { 
+    background-image: url(../images/hexabump.png);
+    background-color: #222;
+}
+
+.demo-2 body:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: -webkit-radial-gradient(center center, circle cover, rgba(0,0,0,0), rgba(0,0,0,0.75));
+    background: radial-gradient(center center, circle cover, rgba(0,0,0,0), rgba(0,0,0,0.75));
+}*/
+
+.demo-2 .spinner {
+    position: relative;
+    font-size: 100px;
+    width: 1em;
+    height: 1em;
+    margin: 240px auto;
+    border-radius: 50%;
+    background: #123456;
+    box-shadow: inset 0 0 0 .12em rgba(0,0,0,0.2), 0 0 0 .12em rgba(255,255,255,0.1);
+    background:
+        -webkit-linear-gradient(#ea2d0e 50%, #fcd883 50%),
+        -webkit-linear-gradient(#fcd883 50%, #ea2d0e 50%);
+    background:
+        -webkit-linear-gradient(#ea2d0e 50%, #ffdd72 50%), -webkit-linear-gradient(#ffdd72 50%, #ea2d0e 50%);
+    background:
+        linear-gradient(#ea2d0e 50%, #ffdd72 50%),
+        linear-gradient(#ffdd72 50%, #ea2d0e 50%);
+    background-size: 50% 100%, 50% 100%;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    -webkit-animation: mask 3s infinite alternate;
+    animation: mask 3s infinite alternate;
+}
+
+.demo-2 .spinner:after {
+    content: "";
+    position: absolute;
+    border: .12em solid rgba(255,255,255,0.3);
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    border-radius: inherit;
+}
+
+@-webkit-keyframes mask {
+    0% { }
+    25%  { -webkit-transform: rotate(270deg); }
+    50%  { -webkit-transform: rotate( 90deg); }
+    75%  { -webkit-transform: rotate(360deg); }
+    100% { -webkit-transform: rotate(180deg); }
+}
+
+@keyframes mask {
+    0% { }
+    25%  { -webkit-transform: rotate(270deg); transform: rotate(270deg); }
+    50%  { -webkit-transform: rotate( 90deg); transform: rotate( 90deg); }
+    75%  { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+    100% { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 }
 /* ========================================================================
   2.16 Component: Footer

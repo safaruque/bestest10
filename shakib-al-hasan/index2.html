@@ -90,11 +90,19 @@
 	    //         });
 	    //     });
 	    // </script>
+	    <script language="javascript" type="text/javascript">
+		  $(window).load(function() {
+		    $('#loading').hide();
+		  });
+		</script>
 
     </head>
 
-    <body>
-    
+    <body class="demo-2">
+   		 <section id="loading">
+				<!-- the component -->
+			<div class="spinner"></div>
+		</section>
 	    <!-- =========================
 	       Fullscreen menu
 	    ============================== -->
@@ -641,8 +649,8 @@
    
      <section id="about-us" class="about-us">
         <div class="overlay">
-            <div class="container padding-top-large">
-                <h2>
+            <div class="container padding-top-large ">
+                <h2 class="text-center">
                     <strong >Career </strong>
                     <span class="light-text main-color"> Statistics</span>
                 </h2>
@@ -740,7 +748,7 @@
 											  <!-- <td  >9</td>
 											  <td  >0</td> -->
 											 </tr>
-											 <tr >
+											 <!-- <tr >
 											  <td    title="record rank: 4"  ><b>First-class</b></td>
 											  <td  >72</td>
 											  <td  >134</td>
@@ -754,8 +762,8 @@
 											  <td  >27</td>
 											  <td  ></td>
 											  <td  ></td>
-											 <!--  <td  >39</td>
-											  <td  >0</td> -->
+											  <td  >39</td>
+											  <td  >0</td>
 											 </tr>
 											 <tr>
 											  <td    title="record rank: 5"  ><b>List A</b></td>
@@ -770,10 +778,10 @@
 											  <td  >6</td>
 											  <td  >33</td>
 											  <td  >450</td>
-											  <td  >43</td>
+											  <td  >43</td> -->
 											 <!--  <td  >52</td>
 											  <td  >0</td> -->
-											 </tr>
+											<!--  </tr> -->
 											 <tr>
 											  <td    title="record rank: 6"  ><b>Twenty20</b></td>
 											  <td  >144</td>
@@ -881,7 +889,7 @@
 											  <td  >0</td>
 											  <td  >0</td>
 											 </tr>
-											 <tr>
+											<!--  <tr>
 											  <td    title="record rank: 4"  ><b>First-class</b></td>
 											  <td  >72</td>
 											  <td  ></td>
@@ -912,7 +920,7 @@
 											  <td  >10</td>
 											  <td  >0</td>
 											  <td  >0</td>
-											 </tr>
+											 </tr> -->
 											 <tr >
 											  <td    title="record rank: 6"  ><b>Twenty20</b></td>
 											  <td  >144</td>
@@ -950,12 +958,12 @@
                                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                     <div class="panel-body">
                                         <table class="engineTable" >
-											<tr>
+											<tr class="best-performance">
 												<th></th>
 												<th colspan="4">Batting</th>
 												<th colspan="4">Bowling</th>
 											</tr>
-											<tr>
+											<tr class="best-stat-heading">
 												<th></th>
 												<th>Score</th>
 												<th>Fixture</th>
@@ -972,7 +980,7 @@
 												<td>Bangladesh <span class="versus"> vs  </span>Pakistan </td>
 												<td>Mirpur</td>
 												<td >2011</td>
-												<td >7–36</td>
+												<td >7/36</td>
 												<td>  Bangladesh <span class="versus"> vs  </span> New Zealand</a></td>
 												<td>Chittagong </td>
 												<td  >2008</td>
@@ -983,7 +991,7 @@
 												<td>Bangladesh <span class="versus"> vs  </span> Canada</td>
 												<td> St. John's</td>
 												<td>2007</td>
-												<td>4–16</td>
+												<td>4/16</td>
 												<td>Bangladesh <span class="versus"> vs  </span> West Indies </td>
 												<td> Chittagong </td>
 												<td>2011</td>
@@ -994,21 +1002,21 @@
 												<td>Bangladesh <span class="versus"> vs  </span> Pakistan </td>
 												<td>Pallekele </td>
 												<td>2012</td>
-												<td>4–21</td>
+												<td>4/21</td>
 												<td>Bangladesh <span class="versus"> vs  </span> Zimbabwe</td>
 												<td>Bulawayo </td>
 												<td >2013</td>
 											</tr>
-											<tr>
+											<!-- <tr>
 												<td>FC</td>
 												<td>144</td>
 												<td>Bangladesh  <span class="versus"> vs </span> Pakistan </td>
 												<td> Mirpur </td>
-												<td   >2011</td>
-												<td   >7–32</td>
+												<td>2011</td>
+												<td>7/32</td>
 												<td> Worcestershire <span class="versus"> vs </span>  Middlesex </td>
 												<td> Lord's </td>
-												<td   >2010</td>
+												<td>2010</td>
 											</tr>
 											<tr>
 												<td> LA </td>
@@ -1016,18 +1024,18 @@
 												<td>  Bangladesh <span class="versus"> vs  </span>  Canada </td>
 												<td>  St. John's </td>
 												<td>  2007</td>
-												<td>  4–16</td>
+												<td>  4/16</td>
 												<td>  Bangladesh <span class="versus"> vs  </span>  West Indies </td>
 												<td>  Chittagong </td>
 												<td>  2011</td>
-											</tr>
+											</tr> -->
 											<tr>
 												<td> T20 </td>
 												<td> 86*</td>
 												<td> Khulna Royal Bengals <span class="versus"> vs  </span>  Dhaka Gladiators </td>
 												<td> Mirpur </td>
 												<td> 2012</td>
-												<td> 6–6</td>
+												<td> 6/6</td>
 												<td> Barbados Tridents <span class="versus"> vs  </span>  Trinidad and Tobago Red Steel </td>
 												<td> Bridgetown </td>
 												<td> 2013</td>
@@ -1194,9 +1202,9 @@
 									<figure class="effect-jazz">
 										<img src="images/2.jpg" alt="img25"/>
 										<figcaption>
-											<h2>Dynamic <span>Jazz</span></h2>
-											<p>When Jazz starts to chase cars, the whole world stands still.</p>
-											<a href="#">View more</a>
+											<h2>News <span></span></h2>
+											<p> Shakib's eyes on next World Cup.</p>
+											<a href="http://en.prothom-alo.com/sports/news/62811/Shakib-s-eyes-on-next-World-Cup">View more</a>
 										</figcaption>			
 									</figure>
 									
@@ -1220,11 +1228,11 @@
 		                    <li class="col-xs-12 col-sm-6 col-md-4 single-portfolio graphic identity">
 		                        <div class="grid">
 									<figure class="effect-jazz">
-										<img src="images/2.jpg" alt="img25"/>
+										<img src="images/espn.jpg" alt="img25"/>
 										<figcaption>
-											<h2>Dynamic <span>Jazz</span></h2>
-											<p>When Jazz starts to chase cars, the whole world stands still.</p>
-											<a href="#">View more</a>
+											<h2>News <span></span></h2>
+											<p>Shakib Al Hasan: "We have proved that we can beat any team at home. We beat New Zealand seven times, and they are the World Cup runners-up."	</p>
+											<a href="http://www.espncricinfo.com/bangladesh-v-pakistan-2015/content/story/858103.html">View more</a>
 										</figcaption>			
 									</figure>
 									
@@ -1245,7 +1253,7 @@
 				<!-- <h3>Profile</h3> -->
 				<div>
 					
-					<img src="images/1.jpg" style="width:700px; height:600px">
+					<img class="modal-image" src="images/1.jpg" >
 					<div class="md-close">
 					  <a href="#" class="close-classic"></a>
 					</div>
@@ -1253,11 +1261,11 @@
 			</div>	
 		</div>
 		<div class="md-modal md-effect-18" id="modal-2">
-			<div class="md-content">
+			<div class="md-content" style="background:none;">
 				<!-- <h3>Profile</h3> -->
 				<div>
 					
-					<img src="images/1.jpg" style="width:700px; height:600px">
+					<img class="modal-image" src="images/2.jpg" >
 					<div class="md-close">
 					  <a href="#" class="close-classic"></a>
 					</div>
@@ -1272,7 +1280,7 @@
                     <strong class="main-color bold-text"> Moments</strong>
                 </h2>
                 <div class="line main-bg"></div>
-                <a href="#" class=" md-trigger mask-a" data-modal="modal-10" > Learn More</a>
+                
 
                 <div class="col-md-12 ">
                     <div id="photostack-1" class="photostack photostack-start">
@@ -1286,7 +1294,9 @@
 								</figcaption>
 							</figure>
 							<figure>
-                                <a href="#" class=" md-trigger mask-a" data-modal="modal-1" ><img src="img/2.jpg" alt="img02"/></a>
+                                <a href="#" class=" md-trigger mask-a" data-modal="modal-2" >
+                                	<img src="img/2.jpg" alt="img02"/>
+                                </a>
 								<figcaption>
 									<h2 class="photostack-title">Happy Days</h2>
 								</figcaption>
@@ -1402,12 +1412,6 @@
 								<!--</figcaption>-->
 							<!--</figure>-->
 						</div>
-						<div class="slideshow">
-					        <nav>
-								<span class="icon nav-prev"></span>
-								<span class="icon nav-next"></span>
-								<span class="icon nav-close"></span>
-							</nav></div>
 					</div>
                 </div>
             </div> 
@@ -1530,6 +1534,7 @@
             </div>
         </div> -->
     </section> <!-- *** end Twitter *** -->
+
 
 
 <!-- =========================
