@@ -1332,13 +1332,16 @@ table.profile{
   transition: background .5s;
 }
 .case-study .case-study-left {
-  background: url("../img/case-study/bf-left.jpg") no-repeat;
-  background-size: cover;
+  /*background: url("../img/case-study/bf-left.jpg") no-repeat;
+  background-size: cover;*/
+
   height: 363px;
+
+
 }
 .case-study .case-study-right {
-  background: url("../img/case-study/bf-right.jpg") no-repeat;
-  background-size: cover;
+  /*background: url("../img/case-study/bf-right.jpg") no-repeat;
+  background-size: cover;*/
   height: 363px;
 }
 .case-study .overlay:hover {

@@ -35,6 +35,8 @@
 		
 		<!--<script type="text/javascript" src="js/modernizr.min.js"></script>-->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
+		
+	
 
 
 		
@@ -243,7 +245,7 @@
 			
 
         </div>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
+		
 		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
 		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
 		<script type="text/javascript">	
@@ -1060,20 +1062,180 @@
     <!-- =========================
        Case Study
     ============================== -->
+    <script type="text/javascript">
+ //    $(function () {
+	//     $('#case-study-left').highcharts({
+	//         chart: {
+	//             type: 'column',
+	//             margin: 75,
+	//             options3d: {
+	// 				enabled: true,
+	//                 alpha: 15,
+	//                 beta: 15,
+	//                 depth: 50
+	//             }
+	//         },
+	//         plotOptions: {
+	//             column: {
+	//                 depth: 25
+	//             }
+	//         },
+	//         series: [{
+	//             data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+	//         }]
+	//     });
+	// });
+		$(function () {
 
-<section id="case-study" class="case-study">
+		    // Create the chart
+		    $('#case-study-left').highcharts({
+		        chart: {
+		            type: 'column',
+		            events: {
+		                drilldown: function (e) {
+		                    if (!e.seriesOptions) {
+
+		                        var chart = this,
+		                            drilldowns = {
+		                                'Animals': {
+		                                    name: 'Animals',
+		                                    data: [
+		                                        ['Cows', 2],
+		                                        ['Sheep', 3]
+		                                    ]
+		                                },
+		                                'Fruits': {
+		                                    name: 'Fruits',
+		                                    data: [
+		                                        ['Apples', 5],
+		                                        ['Oranges', 7],
+		                                        ['Bananas', 2]
+		                                    ]
+		                                },
+		                                'Cars': {
+		                                    name: 'Cars',
+		                                    data: [
+		                                        ['Toyota', 1],
+		                                        ['Volkswagen', 2],
+		                                        ['Opel', 5]
+		                                    ]
+		                                }
+		                            },
+		                            series = drilldowns[e.point.name];
+
+		                        // Show the loading label
+		                        chart.showLoading('Simulating Ajax ...');
+
+		                        setTimeout(function () {
+		                            chart.hideLoading();
+		                            chart.addSeriesAsDrilldown(e.point, series);
+		                        }, 1000);
+		                    }
+
+		                }
+		            }
+		        },
+		        title: {
+		            text: 'Async drilldown'
+		        },
+		        xAxis: {
+		            type: 'category'
+		        },
+
+		        legend: {
+		            enabled: false
+		        },
+
+		        plotOptions: {
+		            series: {
+		                borderWidth: 0,
+		                dataLabels: {
+		                    enabled: true
+		                }
+		            }
+		        },
+
+		        series: [{
+		            name: 'Things',
+		            colorByPoint: true,
+		            data: [{
+		                name: 'Animals',
+		                y: 5,
+		                drilldown: true
+		            }, {
+		                name: 'Fruits',
+		                y: 2,
+		                drilldown: true
+		            }, {
+		                name: 'Cars',
+		                y: 4,
+		                drilldown: true
+		            }]
+		        }],
+
+		        drilldown: {
+		            series: []
+		        }
+		    });
+		});
+
+
+	</script>
+
+	<section id="case-study" class="case-study">
         <div class="row mar-none mat-none">
 
             <!-- *****  Case Study Left ***** -->
-            <div class="col-md-6 case-study-left wow slideInLeft">
+            <div class="col-md-6 case-study-left" id="case-study-left">
 
                 <div class=" padding-large text-right">
                    
                 </div>
             </div>
 
+
+            <script type="text/javascript">
+				$(function () {
+				    $('#case-study-right').highcharts({
+				        chart: {
+				            type: 'pie',
+				            options3d: {
+				                enabled: true,
+				                alpha: 45
+				            }
+				        },
+				        title: {
+				            text: 'Contents of Highsoft\'s weekly fruit delivery'
+				        },
+				        subtitle: {
+				            text: '3D donut in Highcharts'
+				        },
+				        plotOptions: {
+				            pie: {
+				                innerSize: 100,
+				                depth: 45
+				            }
+				        },
+				        series: [{
+				            name: 'Delivered amount',
+				            data: [
+				                ['Bananas', 8],
+				                ['Kiwi', 3],
+				                ['Mixed nuts', 1],
+				                ['Oranges', 6],
+				                ['Apples', 8],
+				                ['Pears', 4],
+				                ['Clementines', 4],
+				                ['Reddish (bag)', 1],
+				                ['Grapes (bunch)', 1]
+				            ]
+				        }]
+				    });
+				});
+						</script>
+
             <!-- *****  Case Study Right ***** -->
-            <div class="col-md-6 case-study-right wow slideInRight">
+            <div class="col-md-5 col-md-offset-1 case-study-right " id="case-study-right">
                 <div class=" padding-large">
                    
                 </div>
@@ -1543,6 +1705,9 @@
 
         <!-- classie.js by @desandro: https://github.com/desandro/classie -->
         <script src="js/classie.js"></script>
+        <script type="text/javascript" src="js/highcharts.js"></script>
+        <script  type="text/javascript" src="js/highcharts-3d.js"></script>
+        <script src="../../js/modules/exporting.js"></script>
 	    
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 		<script src="js/queryloader2.min.js"></script>
