@@ -188,7 +188,7 @@ th, td{
 .line {
   width: 150px;
   height: 2px;
-  margin-top: 15px;
+  margin: 15px auto 45px;
 }
 .button.light {
   border: 2px solid #eeeeee;
@@ -970,7 +970,7 @@ header .logo-container {
   transition: all 0.4s ease;
 }
 .profile{
-  padding: 20px 0px 80px;
+  padding: 45px 0px 80px;
 }
 
 .left-profile{
@@ -1334,7 +1334,7 @@ table.profile{
 .case-study .case-study-left {
   /*background: url("../img/case-study/bf-left.jpg") no-repeat;
   background-size: cover;*/
-
+  background: #dd4b39;
   height: 363px;
 
 
@@ -1343,6 +1343,7 @@ table.profile{
   /*background: url("../img/case-study/bf-right.jpg") no-repeat;
   background-size: cover;*/
   height: 363px;
+  background: #E7F0F0;
 }
 .case-study .overlay:hover {
   width: 100%;
@@ -1395,10 +1396,10 @@ table.profile{
 /* ========================================================================
   2.6 Component: Career Statistics
  ========================================================================== */
- .about-us .line{
+ /*.about-us .line{
 
   margin: 15px auto 45px;
-}
+}*/
  #count {
   background-color: #fff;
   margin-top: 60px;
@@ -1650,10 +1651,10 @@ table.profile{
 /*=========================================================================
 News
 ==========================================================================*/
-.our-team .line{
+/*.our-team .line{
 
   margin: 15px auto 45px;
-}
+}*/
 
 .portfolio-wrap{
     position: relative;

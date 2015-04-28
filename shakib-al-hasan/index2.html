@@ -100,8 +100,9 @@
 
     </head>
 
-    <body class="demo-2">
-   		 <section id="loading">
+    <body >
+    	
+   		 <section class="demo-2" id="loading">
 				<!-- the component -->
 			<div class="spinner"></div>
 		</section>
@@ -443,7 +444,12 @@
 				<div class=" col-md-10 col-md-offset-1 section primary-section wow fadeInDown" id="about">
 		           
 	                <div class="title">
-	                    <h1>Who Am I?</h1>
+	                    <h2 class="text-center">
+	                    	<span class="light-text main-color"> Who</span>
+		                    <strong > Am I? </strong>
+		                    
+		                </h2>
+		                <div class="line main-bg"></div>
 	                    <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
 	                </div>
 	            </div>
@@ -475,7 +481,7 @@
                                 <h2>Designer</h2>
                                 <br>
                                 <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
-                                <a href="#" class=" md-trigger mask-a" data-modal="modal-11" > Learn More</a>
+                                <a href="#" class=" md-trigger mask-a" data-modal="modal-11" ><i class="profile fa fa-info-circle"></i></a>
                             </div>
                         </div>
                     </div>
@@ -489,7 +495,7 @@
                                 <h2>Photographer</h2>
                                 <br>
                                 <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
-                                <a href="#" class=" md-trigger mask-a" data-modal="modal-12" > Learn More</a>
+                                <a href="#" class=" md-trigger mask-a" data-modal="modal-12" > <i class="profile fa fa-info-circle"></i></a>
                             </div>
                         </div>
                     </div>
@@ -653,7 +659,7 @@
         <div class="overlay">
             <div class="container padding-top-large ">
                 <h2 class="text-center">
-                    <strong >Career </strong>
+                    <strong >Career  </strong>
                     <span class="light-text main-color"> Statistics</span>
                 </h2>
                 <div class="line main-bg"></div>
@@ -1063,126 +1069,126 @@
        Case Study
     ============================== -->
     <script type="text/javascript">
- //    $(function () {
-	//     $('#case-study-left').highcharts({
-	//         chart: {
-	//             type: 'column',
-	//             margin: 75,
-	//             options3d: {
-	// 				enabled: true,
-	//                 alpha: 15,
-	//                 beta: 15,
-	//                 depth: 50
-	//             }
-	//         },
-	//         plotOptions: {
-	//             column: {
-	//                 depth: 25
-	//             }
-	//         },
-	//         series: [{
-	//             data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
-	//         }]
-	//     });
-	// });
-		$(function () {
+    $(function () {
+	    $('#case-study-left').highcharts({
+	        chart: {
+	            type: 'column',
+	            margin: 75,
+	            options3d: {
+					enabled: true,
+	                alpha: 15,
+	                beta: 15,
+	                depth: 50
+	            }
+	        },
+	        plotOptions: {
+	            column: {
+	                depth: 25
+	            }
+	        },
+	        series: [{
+	            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+	        }]
+	    });
+	});
+		// $(function () {
 
-		    // Create the chart
-		    $('#case-study-left').highcharts({
-		        chart: {
-		            type: 'column',
-		            events: {
-		                drilldown: function (e) {
-		                    if (!e.seriesOptions) {
+		//     // Create the chart
+		//     $('#case-study-left').highcharts({
+		//         chart: {
+		//             type: 'column',
+		//             events: {
+		//                 drilldown: function (e) {
+		//                     if (!e.seriesOptions) {
 
-		                        var chart = this,
-		                            drilldowns = {
-		                                'Animals': {
-		                                    name: 'Animals',
-		                                    data: [
-		                                        ['Cows', 2],
-		                                        ['Sheep', 3]
-		                                    ]
-		                                },
-		                                'Fruits': {
-		                                    name: 'Fruits',
-		                                    data: [
-		                                        ['Apples', 5],
-		                                        ['Oranges', 7],
-		                                        ['Bananas', 2]
-		                                    ]
-		                                },
-		                                'Cars': {
-		                                    name: 'Cars',
-		                                    data: [
-		                                        ['Toyota', 1],
-		                                        ['Volkswagen', 2],
-		                                        ['Opel', 5]
-		                                    ]
-		                                }
-		                            },
-		                            series = drilldowns[e.point.name];
+		//                         var chart = this,
+		//                             drilldowns = {
+		//                                 'Animals': {
+		//                                     name: 'Animals',
+		//                                     data: [
+		//                                         ['Cows', 2],
+		//                                         ['Sheep', 3]
+		//                                     ]
+		//                                 },
+		//                                 'Fruits': {
+		//                                     name: 'Fruits',
+		//                                     data: [
+		//                                         ['Apples', 5],
+		//                                         ['Oranges', 7],
+		//                                         ['Bananas', 2]
+		//                                     ]
+		//                                 },
+		//                                 'Cars': {
+		//                                     name: 'Cars',
+		//                                     data: [
+		//                                         ['Toyota', 1],
+		//                                         ['Volkswagen', 2],
+		//                                         ['Opel', 5]
+		//                                     ]
+		//                                 }
+		//                             },
+		//                             series = drilldowns[e.point.name];
 
-		                        // Show the loading label
-		                        chart.showLoading('Simulating Ajax ...');
+		//                         // Show the loading label
+		//                         chart.showLoading('Simulating Ajax ...');
 
-		                        setTimeout(function () {
-		                            chart.hideLoading();
-		                            chart.addSeriesAsDrilldown(e.point, series);
-		                        }, 1000);
-		                    }
+		//                         setTimeout(function () {
+		//                             chart.hideLoading();
+		//                             chart.addSeriesAsDrilldown(e.point, series);
+		//                         }, 1000);
+		//                     }
 
-		                }
-		            }
-		        },
-		        title: {
-		            text: 'Async drilldown'
-		        },
-		        xAxis: {
-		            type: 'category'
-		        },
+		//                 }
+		//             }
+		//         },
+		//         title: {
+		//             text: 'Async drilldown'
+		//         },
+		//         xAxis: {
+		//             type: 'category'
+		//         },
 
-		        legend: {
-		            enabled: false
-		        },
+		//         legend: {
+		//             enabled: false
+		//         },
 
-		        plotOptions: {
-		            series: {
-		                borderWidth: 0,
-		                dataLabels: {
-		                    enabled: true
-		                }
-		            }
-		        },
+		//         plotOptions: {
+		//             series: {
+		//                 borderWidth: 0,
+		//                 dataLabels: {
+		//                     enabled: true
+		//                 }
+		//             }
+		//         },
 
-		        series: [{
-		            name: 'Things',
-		            colorByPoint: true,
-		            data: [{
-		                name: 'Animals',
-		                y: 5,
-		                drilldown: true
-		            }, {
-		                name: 'Fruits',
-		                y: 2,
-		                drilldown: true
-		            }, {
-		                name: 'Cars',
-		                y: 4,
-		                drilldown: true
-		            }]
-		        }],
+		//         series: [{
+		//             name: 'Things',
+		//             colorByPoint: true,
+		//             data: [{
+		//                 name: 'Animals',
+		//                 y: 5,
+		//                 drilldown: true
+		//             }, {
+		//                 name: 'Fruits',
+		//                 y: 2,
+		//                 drilldown: true
+		//             }, {
+		//                 name: 'Cars',
+		//                 y: 4,
+		//                 drilldown: true
+		//             }]
+		//         }],
 
-		        drilldown: {
-		            series: []
-		        }
-		    });
-		});
+		//         drilldown: {
+		//             series: []
+		//         }
+		//     });
+		// });
 
 
 	</script>
 
-	<section id="case-study" class="case-study">
+	<section id="case-study" class="case-study wow fadeInDown delay2">
         <div class="row mar-none mat-none">
 
             <!-- *****  Case Study Left ***** -->
@@ -1235,7 +1241,7 @@
 						</script>
 
             <!-- *****  Case Study Right ***** -->
-            <div class="col-md-5 col-md-offset-1 case-study-right " id="case-study-right">
+            <div class="col-md-6  case-study-right " id="case-study-right">
                 <div class=" padding-large">
                    
                 </div>
@@ -1618,7 +1624,7 @@
 								</form>
 							</div>
 						</div>
-						<div class="container-fluid padding-footer text-center overlay  wow fadeInUp delay3">
+						<div class="container-fluid padding-footer text-center overlay  wow fadeInDown delay3">
 		                    <div class="row">
 		                        <div class="col-md-10 col-md-offset-1">
 		                            <figure >
@@ -1634,67 +1640,7 @@
 					</div>
                 </div>
             </div>
-
     	</div>
-
-    	
-
-        <!-- <div class="overlay">
-        	<div class="container-fluid  text-center ">
-        		<div class="row">
-        			<div class="col-md-12 subscription-border"></div>
-        		</div>
-                <div class="row">
-                    <div class="col-md-12 ">
-                        <div class="content bgcolor-4">
-                        	<div class="container">
-                        		<div class="row">
-                        			<div class="col-md-4">
-	                        			<span class="input input--akira">
-											<input class="input__field input__field--akira" type="text" id="input-22" />
-											<label class="input__label input__label--akira" for="input-22">
-												<span class="input__label-content input__label-content--akira">Full Name</span>
-											</label>
-										</span>
-			                        </div>
-			                        <div class="col-md-4">
-			                        		<span class="input input--akira">
-											<input class="input__field input__field--akira" type="text" id="input-23" />
-											<label class="input__label input__label--akira" for="input-23">
-												<span class="input__label-content input__label-content--akira">Email Address</span>
-											</label>
-										</span>
-			                        </div>
-			                        <div class="col-md-4">
-			                        	<button class="button button--shikoba button--round-s button--border-thin">
-			                        		<i class="fa fa-envelope-o"></i>
-			                        		<span class="subscription-margin">Get Update</span>
-			                        	</button>
-				
-									</div>
-
-									</div>
-								</div>
-							</div>                       
-                    	</div>
-                	</div>
-                </div>
-                           
-            	<div class="container-fluid padding-footer text-center overlay">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <figure >
-                                <img src="img/logo.png" class="footer-logo" alt="Krefolio">
-                            </figure>
-                            
-                            <p class="copyright">
-                                &copy; Copyright 2015 - All rights reserved
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </section> <!-- *** end Twitter *** -->
 
 
