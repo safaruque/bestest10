@@ -74,11 +74,17 @@ perspective effects (not including the modals and the overlay).
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
+	text-align: justify;
 }
 .modal-image{
 	width:700px; 
 	height:600px;
 	border: 1px solid rgb(202, 202, 202);
+}
+.md-content .biography{
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.5em;
 }
 
 .md-content h3 {

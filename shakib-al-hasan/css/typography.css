@@ -19,7 +19,8 @@ body {
     font-family: "Campton Bold", sans-serif;
 }
 .light-text {
-    font-family: "Campton Light", sans-serif;
+    /*font-family: "Campton Light", sans-serif;*/
+    font-weight: 300;
 }
 header p {
     font-size: 18px;
