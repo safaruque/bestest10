@@ -248,3 +248,4 @@ $("input.label_better, textarea.label_better").label_better({
   //  });
   //}
 });
+

@@ -1,4 +1,4 @@
-*{
+/**{
 	margin:0;
 	padding:0;
 }
@@ -7,8 +7,8 @@ body{
 	font-size:14px;
 	background:#333 url(../images/background.png) repeat top left;
 	color:#333;
-}
-h1{
+}*/
+/*h1{
 	background:transparent url(../images/title.png) no-repeat top left;
 	text-indent:-9000px;
 	width:73px;
@@ -16,8 +16,8 @@ h1{
 	position:absolute;
 	top:20px;
 	left:0px;
-}
-h2{
+}*/
+/*h2{
 	font-size:26px;
 	padding:10px 0px 10px 0px;
 	margin-top:20px;
@@ -32,7 +32,7 @@ a:hover{
 }
 p{
 	padding:5px 0px;
-}
+}*/
 .wrapper{
 	width:960px;
 	margin:20px auto;
@@ -65,8 +65,8 @@ p{
 }
 /* Box Gallery style */
 .xg_container{
-	width:800px;
-	height:530px;
+	width: 828px;
+	height: 558px;
 	background:#aaa url(../images/default.jpg) no-repeat top left;
 	position:relative;
 	margin:0 auto 60px auto;
