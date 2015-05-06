@@ -1494,6 +1494,10 @@ table.profile{
 /* ========================================================================
   2.8 Component: Our Team
  ========================================================================== */
+ .social-news {
+  background: #F7F7F7;
+  height: 875px;
+ }
 .our-team {
   background: #eee;
   padding-bottom: 50px;

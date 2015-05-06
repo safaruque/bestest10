@@ -108,17 +108,17 @@
 		} );
 
 		// hamburger menu button (mobile) and close cross
-		menuCtrl.addEventListener('click', function() {
-			if( !classie.has(sidebarEl, 'sidebar--open') ) {
-				classie.add(sidebarEl, 'sidebar--open');	
-			}
-		});
+		// // menuCtrl.addEventListener('click', function() {
+		// // 	if( !classie.has(sidebarEl, 'sidebar--open') ) {
+		// // 		classie.add(sidebarEl, 'sidebar--open');	
+		// // 	}
+		// // });
 
-		menuCloseCtrl.addEventListener('click', function() {
-			if( classie.has(sidebarEl, 'sidebar--open') ) {
-				classie.remove(sidebarEl, 'sidebar--open');
-			}
-		});
+		// // menuCloseCtrl.addEventListener('click', function() {
+		// // 	if( classie.has(sidebarEl, 'sidebar--open') ) {
+		// // 		classie.remove(sidebarEl, 'sidebar--open');
+		// // 	}
+		// });
 	}
 
 	function loadContent(item) {
@@ -138,21 +138,28 @@
 		
 		// body overlay
 		classie.add(bodyEl, 'view-single');
+ var y = scrollY();
+ var st = $('#theGrid').scrollTop();
+console.log(st);
 
-		setTimeout(function() {
-			// expands the placeholder
-			dummy.style.WebkitTransform = 'translate3d(-5px, ' + (scrollY() - 5) + 'px, 0px)';
-			dummy.style.transform = 'translate3d(-5px, ' + (scrollY() - 5) + 'px, 0px)';
-			// disallow scroll
-			window.addEventListener('scroll', noscroll);
-		}, 25);
+		dummy.style.WebkitTransform = 'translate3d(-5px, ' + (5 - 5) + 'px, 0px)';
+		dummy.style.transform = 'translate3d(-5px, ' + (5 - 5) + 'px, 0px)';
+
+		// setTimeout(function() {
+		// 	// expands the placeholder
+
+		// 	dummy.style.WebkitTransform = 'translate3d(-5px, ' + (scrollY() - 5) + 'px, 0px)';
+		// 	dummy.style.transform = 'translate3d(-5px, ' + (scrollY() - 5) + 'px, 0px)';
+		// 	// disallow scroll
+		// 	window.addEventListener('scroll', noscroll);
+		// }, 25);
 
 		onEndTransition(dummy, function() {
 			// add transition class 
 			classie.remove(dummy, 'placeholder--trans-in');
 			classie.add(dummy, 'placeholder--trans-out');
 			// position the content container
-			contentItemsContainer.style.top = scrollY() + 'px';
+			//contentItemsContainer.style.top = 100 + 'px';
 			// show the main content container
 			classie.add(contentItemsContainer, 'content--show');
 			// show content item:
@@ -160,7 +167,7 @@
 			// show close control
 			classie.add(closeCtrl, 'close-button--show');
 			// sets overflow hidden to the body and allows the switch to the content scroll
-			classie.addClass(bodyEl, 'noscroll');
+			//classie.addClass(bodyEl, 'noscroll');
 
 			isAnimating = false;
 		});

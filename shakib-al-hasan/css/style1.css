@@ -1,37 +1,4 @@
-/*@import url(http://fonts.googleapis.com/css?family=Playfair+Display+SC:400italic,700,900|Raleway:500|Martel+Sans:400,700);
-@font-face {
-  font-weight: normal;
-  font-style: normal;
-  font-family: 'codropsicons';
-  src: url("../fonts/codropsicons/codropsicons.eot");
-  src: url("../fonts/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"), url("../fonts/codropsicons/codropsicons.woff") format("woff"), url("../fonts/codropsicons/codropsicons.ttf") format("truetype"), url("../fonts/codropsicons/codropsicons.svg#codropsicons") format("svg");
-}
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
-.clearfix:before, .clearfix:after {
-  display: table;
-  content: '';
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-body {
-  background: #fff;
-  color: #7b7b7b;
-  font-weight: 400;
-  font-size: 16px;
-  font-family: "Martel Sans", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
-  overflow-y: scroll;
-  /* force scroll to appear */
-}*/
 
 /* helper class when showing content */
 .noscroll {
@@ -302,6 +269,7 @@ button:focus {
   color: inherit;
   background: #fff;
   min-height: 300px;
+  height: 300px;
   cursor: pointer;
   text-align: center;
   display: -webkit-box;
@@ -464,7 +432,9 @@ button:focus {
 .meta__avatar {
   display: block;
   border-radius: 50%;
-  margin: 2em auto;
+  margin: 2em auto; 
+
+
 }
 
 .meta--preview .meta__avatar {
@@ -569,7 +539,7 @@ button:focus {
   pointer-events: none;
   position: absolute;
   width: calc(100% + 5px);
-  height: calc(100vh + 5px);
+  height: calc(100% + 5px);
   z-index: 100;
   top: 0;
   left: 0;
