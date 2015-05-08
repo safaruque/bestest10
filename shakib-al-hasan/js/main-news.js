@@ -127,8 +127,8 @@
 		dummy.className = 'placeholder';
 
 		// set the width/heigth and position
-		dummy.style.WebkitTransform = 'translate3d(' + (item.offsetLeft - 5) + 'px, ' + (item.offsetTop - 5) + 'px, 0px) scale3d(' + item.offsetWidth/gridItemsContainer.offsetWidth + ',' + item.offsetHeight/getViewport('y') + ',1)';
-		dummy.style.transform = 'translate3d(' + (item.offsetLeft - 5) + 'px, ' + (item.offsetTop - 5) + 'px, 0px) scale3d(' + item.offsetWidth/gridItemsContainer.offsetWidth + ',' + item.offsetHeight/getViewport('y') + ',1)';
+		dummy.style.WebkitTransform = 'translate3d(' + (item.offsetLeft - 5) + 'px, ' + (item.offsetTop - 5) + 'px, 5px) scale3d(' + item.offsetWidth/gridItemsContainer.offsetWidth + ',' + item.offsetHeight/getViewport('y') + ',1)';
+		dummy.style.transform = 'translate3d(' + (item.offsetLeft - 5) + 'px, ' + (item.offsetTop - 5) + 'px, 5px) scale3d(' + item.offsetWidth/gridItemsContainer.offsetWidth + ',' + item.offsetHeight/getViewport('y') + ',1)';
 
 		// add transition class 
 		classie.add(dummy, 'placeholder--trans-in');
@@ -138,11 +138,11 @@
 		
 		// body overlay
 		classie.add(bodyEl, 'view-single');
- var y = scrollY();
- var st = $('#theGrid').scrollTop();
-console.log(st);
+		 var y = scrollY();
+		 var st = $('#theGrid').scrollTop();
+			console.log(st);
 
-		dummy.style.WebkitTransform = 'translate3d(-5px, ' + (5 - 5) + 'px, 0px)';
+		dummy.style.WebkitTransform = 'translate3d(-5px, ' + (5 - 5) + 'px, 5px)';
 		dummy.style.transform = 'translate3d(-5px, ' + (5 - 5) + 'px, 0px)';
 
 		// setTimeout(function() {
