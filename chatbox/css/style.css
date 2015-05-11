@@ -85,7 +85,6 @@
 	padding: 10px;
 }
 .write span{
-	
 	/*margin: 10px 0;*/
 	width: 100%;
 	height: 50px;
@@ -97,7 +96,7 @@
 .seen{
 	color: #C7C7C7;
 	text-align: right;
-	padding: 0px 260px;
+	padding-right: 20px;
 }
 .misc-icons{
 	padding: 10px;
