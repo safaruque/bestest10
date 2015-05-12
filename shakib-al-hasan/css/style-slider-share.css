@@ -1,11 +1,128 @@
+.padding-slider{
+	padding-top: 240px;
+}
 
-.demo-1 .sl-slider-wrapper {
+.sl-slider-wrapper {
+	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.sl-slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Slide wrapper and slides */
+
+.sl-slide,
+.sl-slides-wrapper,
+.sl-slide-inner {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
+} 
+
+.sl-slide {
+	z-index: 1;
 }
+
+/* The duplicate parts/slices */
+
+.sl-content-slice {
+	overflow: hidden;
+	position: absolute;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	background: #fff;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	opacity : 1;
+}
+
+/* Horizontal slice */
+
+.sl-slide-horizontal .sl-content-slice {
+	width: 100%;
+	height: 50%;
+	left: -200px;
+	-webkit-transform: translateY(0%) scale(1);
+	-moz-transform: translateY(0%) scale(1);
+	-o-transform: translateY(0%) scale(1);
+	-ms-transform: translateY(0%) scale(1);
+	transform: translateY(0%) scale(1);
+}
+
+.sl-slide-horizontal .sl-content-slice:first-child {
+	top: -200px;
+	padding: 200px 200px 0px 200px;
+}
+
+.sl-slide-horizontal .sl-content-slice:nth-child(2) {
+	top: 50%;
+	padding: 0px 200px 200px 200px;
+}
+
+/* Vertical slice */
+
+.sl-slide-vertical .sl-content-slice {
+	width: 50%;
+	height: 100%;
+	top: -200px;
+	-webkit-transform: translateX(0%) scale(1);
+	-moz-transform: translateX(0%) scale(1);
+	-o-transform: translateX(0%) scale(1);
+	-ms-transform: translateX(0%) scale(1);
+	transform: translateX(0%) scale(1);
+}
+
+.sl-slide-vertical .sl-content-slice:first-child {
+	left: -200px;
+	padding: 200px 0px 200px 200px;
+}
+
+.sl-slide-vertical .sl-content-slice:nth-child(2) {
+	left: 50%;
+	padding: 200px 200px 200px 0px;
+}
+
+/* Content wrapper */
+/* Width and height is set dynamically */
+.sl-content-wrapper {
+	position: absolute;
+}
+
+.sl-content {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+/* Default styles for background colors */
+.sl-slide-horizontal .sl-slide-inner {
+	background: #ddd;
+
+}
+
+.sl-slide-vertical .sl-slide-inner {
+	background: #ccc;
+}
+
+.fb-share{
+  background: #EFECEC;
+  padding:30px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
 
 .demo-2 .sl-slider-wrapper {
 	width: 100%;
@@ -165,218 +282,29 @@
 
 /* Content elements */
 
-.demo-1 .deco {
-	width: 260px;
-	height: 260px;
-	border: 2px dashed #ddd;
-	border: 2px dashed rgba(150,150,150,0.4);
-	border-radius: 50%;
-	position: absolute;
-	bottom: 50%;
-	left: 50%;
-	margin: 0 0 0 -130px;
-}
-
-.demo-1 [data-icon]:after {
-    content: attr(data-icon);
-    font-family: 'AnimalsNormal';
-	color: #999;
-	text-shadow: 0 0 1px #999;
-	position: absolute;
-	width: 220px;
-	height: 220px;
-	line-height: 220px;
-	text-align: center;
-	font-size: 100px;
-	top: 50%;
-	left: 50%;
-	margin: -110px 0 0 -110px;
-	box-shadow: inset 0 0 0 10px #f7f7f7;
-	border-radius: 50%;
-}
-
-.demo-1 .sl-slide h2 {
-	color: #000;
-	text-shadow: 0 0 1px #000;
-	padding: 20px;
-	position: absolute;
-	font-size: 34px;
-	font-weight: 700;
-	letter-spacing: 13px;
-	text-transform: uppercase;
-	width: 80%;
-	left: 10%;
-	text-align: center;
-	line-height: 50px;
-	bottom: 50%;
-	margin: 0 0 -120px 0;
-}
-
-.demo-1 .sl-slide blockquote {
-	position: absolute;
-	width: 100%;
-	text-align: center;
-	left: 0;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 20px;
-	height: 70px;
-	color: #8b8b8b;
-	z-index: 2;
-	bottom: 50%;
-	margin: 0 0 -200px 0;
-	padding: 0;
-}
-
-.demo-1 .sl-slide blockquote p{
-	margin: 0 auto;
-	width: 60%;
-	max-width: 400px;
-	position: relative;
-}
-
-.demo-1 .sl-slide blockquote p:before {
-	color: #f0f0f0;
-	color: rgba(244,244,244,0.65);
-	font-family: "Bookman Old Style", Bookman, Garamond, serif;
-	position: absolute;
-	line-height: 60px;
-	width: 75px;
-	height: 75px;
-	font-size: 200px;
-	z-index: -1;
-	left: -80px;
-	top: 35px;
-	content: '\201C';
-}
-
-.demo-1 .sl-slide blockquote cite {
-	font-size: 10px;
-	padding-top: 10px;
-	display: inline-block;
-	font-style: normal;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-}
 
 /* Custom background colors for slides in first demo */
 
 /* First Slide */
-.demo-1 .bg-1 .sl-slide-inner,
-.demo-1 .bg-1 .sl-content-slice {
-	background: #fff;
-}
-
-/* Second Slide */
-.demo-1 .bg-2 .sl-slide-inner,
-.demo-1 .bg-2 .sl-content-slice {
-	background: #000;
-}
-
-.demo-1 .bg-2 [data-icon]:after,
-.demo-1 .bg-2 h2 {
-	color: #fff;
-}
-
-.demo-1 .bg-2 blockquote:before {
-	color: #222;
-}
-
-/* Third Slide */
-.demo-1 .bg-3 .sl-slide-inner,
-.demo-1 .bg-3 .sl-content-slice {
-	background: #db84ad;
-}
-
-.demo-1 .bg-3 .deco {
-	border-color: #fff;
-	border-color: rgba(255,255,255,0.5);
-}
-
-.demo-1 .bg-3 [data-icon]:after {
-	color: #fff;
-	text-shadow: 0 0 1px #fff;
-	box-shadow: inset 0 0 0 10px #b55381;
-}
-
-.demo-1 .bg-3 h2,
-.demo-1 .bg-3 blockquote{
-	color: #fff;
-	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
-}
-
-.demo-1 .bg-3 blockquote:before {
-	color: #c46c96;
-}
-
-/* Forth Slide */
-.demo-1 .bg-4 .sl-slide-inner,
-.demo-1 .bg-4 .sl-content-slice {
-	background: #5bc2ce;
-}
-
-.demo-1 .bg-4 .deco {
-	border-color: #379eaa;
-}
-
-.demo-1 .bg-4 [data-icon]:after {
-	text-shadow: 0 0 1px #277d87;
-	color: #277d87;
-}
-
-.demo-1 .bg-4 h2,
-.demo-1 .bg-4 blockquote{
-	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-}
-
-.demo-1 .bg-4 blockquote:before {
-	color: #379eaa;
-}
-
-/* Fifth Slide */
-.demo-1 .bg-5 .sl-slide-inner,
-.demo-1 .bg-5 .sl-content-slice {
-	background: #ffeb41;
-}
-
-.demo-1 .bg-5 .deco {
-	border-color: #ECD82C;
-}
-
-.demo-1 .bg-5 .deco:after {
-	color: #000;
-	text-shadow: 0 0 1px #000;
-}
-
-.demo-1 .bg-5 h2,
-.demo-1 .bg-5 blockquote{
-	color: #000;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-}
-
-.demo-1 .bg-5 blockquote:before {
-	color: #ecd82c;
-}
 
 .demo-2 .bg-img-1 {
-	background-image: url(../../images/1.jpg);
+	background-image: url(../images/1.jpg);
 	background-position: -2px -350px
 }
 .demo-2 .bg-img-2 {
-	background-image: url(../../images/2.jpg);
+	background-image: url(../images/2.jpg);
 
 }
 .demo-2 .bg-img-3 {
-	background-image: url(../../images/3.jpg);
+	background-image: url(../images/3.jpg);
 	background-position: 22px 3px
 }
 .demo-2 .bg-img-4 {
-	background-image: url(../../images/4.jpg);
+	background-image: url(../images/4.jpg);
 	background-position: 0px -32px;
 }
 .demo-2 .bg-img-5 {
-	background-image: url(../../images/5.jpg);
+	background-image: url(../images/5.jpg);
 }
 
 /* Animations for content elements */
@@ -528,39 +456,7 @@
 /* Media Queries for custom slider */
 
 @media screen and (max-width: 660px) {
-	.demo-1 .deco {
-		width: 130px;
-		height: 130px;
-		margin-left: -65px;
-		margin-bottom: 50px;
-	}
-
-	.demo-1 [data-icon]:after {
-		width: 110px;
-		height: 110px;
-		line-height: 110px;
-		font-size: 40px;
-		margin: -55px 0 0 -55px;
-	}
-
-	.demo-1 .sl-slide blockquote {
-		margin-bottom: -120px;
-	}
-
-	.demo-1 .sl-slide h2 {
-		line-height: 22px;
-		font-size: 18px;
-		margin-bottom: -40px;
-		letter-spacing: 8px;
-	}
-
-	.demo-1 .sl-slide blockquote p:before {
-		line-height: 10px;
-		width: 40px;
-		height: 40px;
-		font-size: 120px;
-		left: -45px;
-	}
+	
 
 	.demo-2 .sl-slider-wrapper {
 		height: 500px;
@@ -574,4 +470,73 @@
 		font-size: 16px;
 	}
 
+}
+
+
+/* ===============Share Button=================== */
+.share {
+  max-width: 600px;
+  height: 100px;
+  margin: 0 auto;
+  -webkit-filter: url("#goo");
+  filter: url("../share.html#goo");
+  position: relative;
+}
+
+.share-button,
+.share-toggle-button {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: #ccc;
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.share-button:hover,
+.share-toggle-button:hover {
+  color: #fff;
+}
+
+.share-button {
+
+  font-size: 30px;
+  background: #E4E4E4;
+  -webkit-transform: scale(0.95, 0.95);
+  transform: scale(0.95, 0.95);
+  color: #222;
+}
+
+a.share-button {
+  color: #3D4444;
+}
+
+a.share-button:hover, 
+a.share-button:focus {
+  color: #dfd7d7;
+}
+
+.share-toggle-button {
+  z-index: 9;
+  background: #F0060F;
+  font-size: 20px;
+}
+
+.share-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.share-item {
+  display: inline-block;
 }
