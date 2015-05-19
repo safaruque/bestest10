@@ -125,7 +125,7 @@
 			// slideshow
 			if( this.options.autoplay ) {
 			
-				this._startSlideshow();
+				//this._startSlideshow();
 			
 			}
 
@@ -466,7 +466,7 @@
 
 				if ( self.options.autoplay ) {
 
-					self._startSlideshow();
+					//self._startSlideshow();
 
 				}
 
