@@ -60,33 +60,23 @@
 		<script type="text/javascript" src="js/jquery.min.js"></script>		
         <script type="text/javascript" src="js/vendor/jquery-1.11.1.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-		<script src="js/vendor/bootstrap.js"></script>
+		<script src="js/vendor/bootstrap.js"></script>	
 
-		<!-- =========================
-       Preloader
-	    ============================== -->
-	    <script type="text/javascript" src="js/queryloader2.min.js"></script>
-	    <script>
-	        window.addEventListener('DOMContentLoaded', function() {
-	            "use strict";
-	            new QueryLoader2(document.querySelector("body"), {
-	                barColor: "#e74c3c",
-	                backgroundColor: "#111",
-	                percentage: true,
-	                barHeight: 1,
-	                minimumTime: 200,
-	                fadeOutTime: 1000
-	            });
-	        });
-	    </script>
 		
-		
+		<script type="text/javascript">
+			jQuery(window).load(function() {
+				jQuery('#loader').hide();
+			});
+		</script>													
 
     </head>
 
     <body >
     	
-    	
+    	<div class="loading-container" id="loader">
+		    <div class="loading"></div>
+		    <div id="loading-text">loading</div>
+		</div>
 	    <!-- =========================
 	       Fullscreen menu
 	    ============================== -->

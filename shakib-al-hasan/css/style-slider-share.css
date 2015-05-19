@@ -164,21 +164,7 @@
 	display: inline-block;
 }
 
-.demo-2 .bg-img {
-	padding: 200px;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	position: absolute;
-	top: -10px;
-	left: -200px;
-	width: 100%;
-	height: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-}
+
 
 /* Custom navigation arrows */
 
@@ -286,6 +272,21 @@
 /* Custom background colors for slides in first demo */
 
 /* First Slide */
+.demo-2 .bg-img {
+	padding: 200px;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	position: absolute;
+	top: -10px;
+	left: -200px;
+	width: 100%;
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
 
 .demo-2 .bg-img-1 {
 	background-image: url(../images/1.jpg);
