@@ -1,0 +1,24 @@
+/*
+Theme Name:     Fusion Child
+Theme URI:      http://portfoliotheme.org/fusion
+Description:    Child theme for the Fusion Theme by LiveMesh
+Author:         LiveMesh
+Author URI:     http://themeforest.net/user/livemesh
+Template:       fusion
+Version:        0.1.0
+*/
+
+#header.sticky #site-logo {
+    top: 5px;
+    }
+
+#page-loading {
+    z-index: 10010;
+    background: #FFF url(http://portfoliotheme.org/wp-content/uploads/2014/05/Preloader_11.gif) no-repeat 50% 50% !important;
+    }
+
+#subscribe-news .mc4wp-alert {
+  margin-top: 10px;
+}
+
+#styleswitcher { display: none; }
