@@ -447,6 +447,19 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 	position:relative;
 }
 
+.tp-caption.fusion-big2, .fusion-big2 {
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 300;
+  font-family: "Open Sans";
+  color: #333333;
+  text-decoration: none;
+  text-shadow: none;
+  background-color: transparent;
+  border-width: 0px;
+  border-color: rgb(0,0,0);
+  border-style: none;
+}
 
 /****************************************************************
 
@@ -645,15 +658,15 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 															-khtml-opacity: 0;
 															opacity: 0;
 														}
-.tp-leftarrow											{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/large_left.png) no-repeat top left;	width:40px;	height:40px;   }
+.tp-leftarrow											{	z-index:100;cursor:pointer; position:relative;	background:url(large_left.png) no-repeat top left;	width:40px;	height:40px;   }
 .tp-rightarrow											{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/large_right.png) no-repeat top left;	width:40px;	height:40px;   }
 
 
-.tp-leftarrow.round										{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/small_left.png) no-repeat top left;	width:19px;	height:14px;  margin-right:0px; float:left; margin-top:0px;	}
+.tp-leftarrow.round										{	z-index:100;cursor:pointer; position:relative;	background:url(small_left.png) no-repeat top left;	width:19px;	height:14px;  margin-right:0px; float:left; margin-top:0px;	}
 .tp-rightarrow.round									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/small_right.png) no-repeat top left;	width:19px;	height:14px;  margin-right:0px; float:left;	margin-top:0px}
 
 
-.tp-leftarrow.round-old									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_left.png) no-repeat top left;	width:26px;	height:26px;  margin-right:0px; float:left; margin-top:0px;	}
+.tp-leftarrow.round-old									{	z-index:100;cursor:pointer; position:relative;	background:url(arrow_left.png) no-repeat top left;	width:26px;	height:26px;  margin-right:0px; float:left; margin-top:0px;	}
 .tp-rightarrow.round-old								{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_right.png) no-repeat top left;	width:26px;	height:26px;  margin-right:0px; float:left;	margin-top:0px}
 
 
@@ -675,7 +688,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 .tp-rightarrow.square-old								{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_right2.png) no-repeat top left;	width:12px;	height:17px;   float:left;	margin-left:0px; margin-top:0px}
 
 
-.tp-leftarrow.default									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/large_left.png) no-repeat 0 0;	width:40px;	height:40px;
+.tp-leftarrow.default									{	z-index:100;cursor:pointer; position:relative;	background:url(large_left.png) no-repeat 0 0;	width:40px;	height:40px;
 
 														}
 .tp-rightarrow.default									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/large_right.png) no-repeat 0 0;	width:40px;	height:40px;

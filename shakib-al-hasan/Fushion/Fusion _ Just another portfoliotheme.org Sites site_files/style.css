@@ -286,9 +286,11 @@ cite, em, i {
 p {
   /* 12px */
   /* 20px */
-  margin: 0 0 20px 0; }
+  margin: 0 0 20px 0; 
+   text-align: justify;}
   p:empty {
-    display: none; }
+    display: none;
+    }
 
 /* Input Boxes */
 input, textarea {
@@ -3247,9 +3249,10 @@ h3.fancy-header {
     margin-right: 0; }
 
 .fivecol {
-  float: left;
+  /*float: left;
+  margin-right: 3.44828%;*/
   display: block;
-  margin-right: 3.44828%;
+  margin: 0 auto;
   width: 39.65517%; }
   .fivecol:last-child {
     margin-right: 0; }
@@ -5540,7 +5543,7 @@ li.comment, li.trackback, li.pingback {
   /* Hide text */
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
-  background-image: url(images/back-to-top.png);
+  background-image: url(back-to-top.png);
   padding: 0;
   height: 50px;
   width: 50px;
@@ -6392,6 +6395,9 @@ ul.image-grid img {
       line-height: 24px; } }
 
 /* ----- Our Clients ---- */
+.dar-text{
+  color: #000;
+}
 #client-list {
   overflow: hidden;
   margin: 0 auto; }
@@ -6528,6 +6534,8 @@ ul.image-grid img {
   position: relative; }
   .image-toggle .image-content, .image-toggle .video-content, .image-toggle .text-content, .video-toggle .image-content, .video-toggle .video-content, .video-toggle .text-content {
     width: 50%;
+    height: 400px; 
+    
     margin: 0;
     display: block;
     box-sizing: border-box; }
@@ -7255,11 +7263,13 @@ ul.image-grid img {
   #app-intro .heading {
     margin-bottom: 30px; }
     #app-intro .heading .title {
+      text-align: center;
       color: #e84a52; }
   #app-intro .pitch {
     color: #443f3f;
     font-size: 18px;
-    line-height: 32px; }
+    line-height: 32px; 
+    text-align: justify;}
     @media only screen and (max-width: 767px) {
       #app-intro .pitch {
         font-size: 15px;
@@ -7267,7 +7277,7 @@ ul.image-grid img {
 
 /* App Feature List */
 #app-features .text-content * {
-  max-width: 410px; }
+  max-width: 440px; }
   @media only screen and (max-width: 767px) {
     #app-features .text-content * {
       max-width: none; } }
@@ -7291,7 +7301,8 @@ ul.image-grid img {
     #app-features .text-content .heading {
       margin-top: 20px; } }
 #app-features .text-content.align-right * {
-  float: right; }
+  float: right; 
+  text-align: justify;}
   @media only screen and (max-width: 767px) {
     #app-features .text-content.align-right * {
       float: none; } }
