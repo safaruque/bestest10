@@ -1,0 +1,33 @@
+var b_txt = '';
+
+// write the badge
+	
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image1"><a href="http://www.flickr.com/photos/rkroenert/16144308/"><img src="http://farm1.staticflickr.com/12/16144308_0cb8971076_s.jpg" alt="A photo on Flickr" title="Sunrise at Joshua Tree National Park" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image2"><a href="http://www.flickr.com/photos/rkroenert/63051136/"><img src="http://farm1.staticflickr.com/29/63051136_040d1c51a1_s.jpg" alt="A photo on Flickr" title="Sunset behind Twin Peaks" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image3"><a href="http://www.flickr.com/photos/rkroenert/17395076/"><img src="http://farm1.staticflickr.com/13/17395076_265603079e_s.jpg" alt="A photo on Flickr" title="Anemone at Moss Beach" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image4"><a href="http://www.flickr.com/photos/rkroenert/193979248/"><img src="http://farm1.staticflickr.com/60/193979248_ef602284c5_s.jpg" alt="A photo on Flickr" title="Mount Rainier Before Sunrise" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image5"><a href="http://www.flickr.com/photos/rkroenert/190013688/"><img src="http://farm1.staticflickr.com/71/190013688_1ddc173bfd_s.jpg" alt="A photo on Flickr" title="Hmong Man and Basket in Sapa" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image6"><a href="http://www.flickr.com/photos/rkroenert/152074515/"><img src="http://farm1.staticflickr.com/49/152074515_b9bbc7ec09_s.jpg" alt="A photo on Flickr" title="Susan and Jake" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image7"><a href="http://www.flickr.com/photos/rkroenert/39987934/"><img src="http://farm1.staticflickr.com/27/39987934_57e88531c1_s.jpg" alt="A photo on Flickr" title="Kate Upside Down x3" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image8"><a href="http://www.flickr.com/photos/rkroenert/152077557/"><img src="http://farm1.staticflickr.com/50/152077557_e0a68907cb_s.jpg" alt="A photo on Flickr" title="Grand Teton Sunrise" height="75" width="75"></a></div>';
+
+
+b_txt += '<span style="position:absolute;left:-999em;top:-999em;visibility:hidden" class="flickr_badge_beacon"><img src="http://geo.yahoo.com/p?s=792600102&t=98f00e290cd7e0dd7b850a4b0d376cc4&fl_ev=0&lang=en&intl=sg" width="0" height="0" alt="" /></span>';
+
+document.write(b_txt);
