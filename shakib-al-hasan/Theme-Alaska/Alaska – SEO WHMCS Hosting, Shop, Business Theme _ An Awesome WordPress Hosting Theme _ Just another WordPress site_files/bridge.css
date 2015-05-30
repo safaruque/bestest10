@@ -1,0 +1,5 @@
+#bridge-frame-container iframe {
+	width:100%;
+	overflow-x:hidden;
+}
+
