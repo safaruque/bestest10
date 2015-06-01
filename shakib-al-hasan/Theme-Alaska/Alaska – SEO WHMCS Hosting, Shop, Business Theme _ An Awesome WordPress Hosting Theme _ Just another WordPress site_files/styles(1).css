@@ -6079,6 +6079,7 @@ iframe{border: none;}
 	border: 1px solid rgba(255, 255, 255, 0.27);
 	color: #d1d1d1;
 	background: none;
+	text-align: center;
 }
 #content-whois table .td{
 	color: #d1d1d1;
